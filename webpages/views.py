@@ -3,14 +3,14 @@ from django.shortcuts import render
 
 
 from django.views.generic import ListView
-from .models import Post
+#from .models import Areatecnologica, Pessoa, Planocurso, Professor, Vinculo, HoratrabProf, Tipocurso, Calendario
 
 
 class HomePageView(ListView):
- model = Post
+ #model = Areatecnologica
  template_name = "home.html"
 
 class AboutPageView(ListView):
- model = Post
+ #model = Pessoa
  template_name = "about.html"
 
