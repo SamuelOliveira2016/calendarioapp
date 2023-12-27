@@ -139,25 +139,13 @@ class Professor(models.Model):
 
     nif = models.CharField(max_length=20, unique=True)
     nivel = models.CharField(max_length=100, null=True, blank=True)
-
-    # Relação com Horário de Trabalho (opcional, dependendo da necessidade)
-    horario_trabalho = models.ManyToManyField(HoratrabProf, blank=True)
-
     # Relação com Cursos que o Professor pode lecionar
     cursos = models.ManyToManyField(Curso, blank=True)
 
-    def disponivel_no_horario(self, dia_letivo, horario):
-        # Verificar se o professor tem um horário de trabalho que conflita
-        # Isso pode exigir ajustes dependendo da estrutura do seu modelo HoratrabProf
-        conflitos = self.horario_trabalho.filter(
-            selected_days__contains=[dia_letivo.weekday()],
-            horatrabIni__lte=horario,
-            horatrabFim__gte=horario
-        )
-        return not conflitos.exists()
+    
 
     def __str__(self):
-        return f"{self.nome} - NIF: {self.nif} - Nível: {self.nivel}"
+        return f"NIF: {self.nif} - Nível: {self.nivel}"
 
 class CursoUnidadeCurricularProfessor(models.Model):
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
