@@ -29,11 +29,10 @@ class Vinculo(models.Model):
     pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE)
 
     def __str__(self) -> str:
-        return f"{self.pessoa.nome} - {self.get_tipo_vinculo_display()}"
+        return f"{self.pessoa.nome}"
 
 class HoratrabProf(models.Model):
     pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE, null=True, blank=True)
-    vinculo = models.ForeignKey(Vinculo, on_delete=models.CASCADE, null=True, blank=True)
     horatrabIni = models.TimeField()
     horatrabFim = models.TimeField()
 
@@ -92,13 +91,7 @@ class Tipocurso(models.Model):
 
 
 
-class UnidadeCurricular(models.Model):
-    nome = models.CharField(max_length=100)
-    descricao = models.TextField(blank=True)
-    carga_horaria = models.IntegerField(blank=True, null=True)
 
-    def __str__(self):
-        return self.nome
     
 
 class Infraestrutura(models.Model):
@@ -126,11 +119,24 @@ class Curso(models.Model):
     nome = models.CharField(max_length=100)
     quantidade_horas_total = models.IntegerField(blank=True, null=True)
     tipo_curso = models.ForeignKey(Tipocurso, on_delete=models.SET_NULL, null=True, blank=True)
-    infraestruturas = models.ManyToManyField(Infraestrutura, blank=True)
-
+    areatecnologica = models.ManyToManyField(Areatecnologica, blank=True)
+    
     def __str__(self):
         return self.nome
 
+class UnidadeCurricular(models.Model):
+    nome = models.CharField(max_length=100)
+    carga_horaria = models.IntegerField(blank=True, null=True)
+    capacidadesSociais = models.TextField(blank=True)
+    capacidadeTecnicaFundamentos = models.TextField(blank=True)
+
+    horas_sala_aula = models.IntegerField(blank=True, null=True)
+    horas_laboratorio = models.IntegerField(blank=True, null=True)
+    horas_oficina = models.IntegerField(blank=True, null=True)
+    curso = models.ForeignKey(Curso, on_delete=models.CASCADE, blank=True, null=True)
+    def __str__(self):
+        return self.nome
+    
 
 class Professor(models.Model):
     id = models.AutoField(primary_key=True, default=0)  # Escolha um valor padrão adequado

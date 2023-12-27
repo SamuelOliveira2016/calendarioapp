@@ -9,7 +9,7 @@ class PessoaSerializer(serializers.ModelSerializer):
 class VinculoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Vinculo
-        fields = '__all__'
+        fields = ['id', 'pessoa','vinculo']
 
 class TipoCursoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -29,7 +29,7 @@ class CursoSerializer(serializers.ModelSerializer):
 class UnidadeCurricularSerializer(serializers.ModelSerializer):
     class Meta:
         model = UnidadeCurricular
-        fields = ['id', 'nome', 'capacidadeTecnicaFundamentos', 'capacidadesSociais', 'carga_horaria', 'curso']
+        fields = ['id', 'horas_sala_aula','horas_laboratorio','horas_oficina','nome', 'capacidadeTecnicaFundamentos', 'capacidadesSociais', 'carga_horaria', 'curso']
 
 class HoratrabProfSerializer(serializers.ModelSerializer):
     class Meta:
