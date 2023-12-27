@@ -39,4 +39,4 @@ class HoratrabProfSerializer(serializers.ModelSerializer):
 class ProfessorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Professor
-        fields = ['id', 'nif', 'nivel', 'cursos', 'pessoa']
+        fields = ['id', 'nif', 'nivel', 'pessoa']

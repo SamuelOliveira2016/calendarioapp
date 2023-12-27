@@ -140,18 +140,12 @@ class UnidadeCurricular(models.Model):
 
 class Professor(models.Model):
     id = models.AutoField(primary_key=True, default=0)  # Escolha um valor padrão adequado
-
     pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE, null=True)  # null=True permite valores nulos
-
     nif = models.CharField(max_length=20, unique=True)
     nivel = models.CharField(max_length=100, null=True, blank=True)
-    # Relação com Cursos que o Professor pode lecionar
-    cursos = models.ManyToManyField(Curso, blank=True)
-
-    
 
     def __str__(self):
-        return f"NIF: {self.nif} - Nível: {self.nivel}"
+        return f"NOME: {self.pessoa.nome} - NIF: {self.nif} - Nível: {self.nivel}"
 
 class CursoUnidadeCurricularProfessor(models.Model):
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
