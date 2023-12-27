@@ -132,10 +132,11 @@ class Curso(models.Model):
         return self.nome
 
 
-    def __str__(self):
-        return f"{self.curso.nome} - {self.unidade_curricular.nome}"
+class Professor(models.Model):
+    id = models.AutoField(primary_key=True, default=0)  # Escolha um valor padrão adequado
 
-class Professor(Pessoa):
+    pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE, null=True)  # null=True permite valores nulos
+
     nif = models.CharField(max_length=20, unique=True)
     nivel = models.CharField(max_length=100, null=True, blank=True)
 
