@@ -1,8 +1,11 @@
 from django.db import models
 from django.contrib.postgres.fields import ArrayField
 
-from datetime import datetime
+from datetime import datetime, timedelta
 from django.core.exceptions import ValidationError
+from .google_calendar import fetch_holidays
+
+
 
 
 
@@ -64,9 +67,6 @@ class HoratrabProf(models.Model):
     def __str__(self):
         return f"{self.pessoa.nome} - {self.turno()} - {self.quanthorames} horas/mês"
 
-
-
-
 class Areatecnologica(models.Model):
     nome = models.CharField(max_length=255)
     descricao = models.TextField()
@@ -109,7 +109,6 @@ class Infraestrutura(models.Model):
     def __str__(self):
         return f"{self.nome} ({self.get_tipo_display()}) - Capacidade: {self.capacidade}"
 
-
 class Curso(models.Model):
     nome = models.CharField(max_length=100)
     quantidade_horas_total = models.IntegerField(blank=True, null=True)
@@ -129,8 +128,7 @@ class UnidadeCurricular(models.Model):
     horas_oficina = models.IntegerField(blank=True, null=True)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE, blank=True, null=True)
     def __str__(self):
-        return self.nome
-    
+        return self.nome   
 
 class Professor(models.Model):
     id = models.AutoField(primary_key=True, default=0)  # Escolha um valor padrão adequado
@@ -147,13 +145,40 @@ class CursoUnidadeCurricularProfessor(models.Model):
     professor = models.ForeignKey(Professor, on_delete=models.CASCADE, default=0)  # Mudança aqui
 
 class CalendarioAcademico(models.Model):
+    nome = models.CharField(max_length=100, blank=True, null=True)  # Novo campo adicionado
     ano_letivo = models.IntegerField()
     semestre = models.IntegerField()
     inicio = models.DateField()
     termino = models.DateField()
 
-    def __str__(self):
-        return f"Calendário {self.ano_letivo} - Semestre {self.semestre}"
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)  # Chama o save original primeiro
+        self.create_or_update_dias_letivos()
+
+    def create_or_update_dias_letivos(self):
+        # Converta as datas de início e término para datetime.date, se ainda não forem
+        start_date = self.inicio
+        end_date = self.termino
+        holidays = fetch_holidays(start_date.isoformat(), end_date.isoformat())
+
+        current_date = start_date
+        while current_date <= end_date:
+            # Verifica se o dia é um feriado ou fim de semana
+            e_dia_de_aula = not (current_date.weekday() in [5, 6] or current_date.isoformat() in holidays)
+
+            # Cria ou atualiza o DiaLetivo
+            DiaLetivo.objects.update_or_create(
+                data=current_date,
+                calendario_academico=self,
+                defaults={'e_dia_de_aula': e_dia_de_aula}
+            )
+
+            # Incrementa a data atual
+            current_date += timedelta(days=1)
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        self.create_or_update_dias_letivos()
 
 class DiaLetivo(models.Model):
     data = models.DateField()

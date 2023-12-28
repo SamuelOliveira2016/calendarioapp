@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import  ProfessorDetailView,CursoUnidadeCurricularProfessorAPIView, ProfessorAPIView ,HoratrabProfAPIView, UnidadeCurricularAPIView ,PessoaAPIView, AreaTecnologicaAPIView, TipoCursoAPIView, CursoAPIView, VinculoAPIView
+from .views import CalendarioAcademicoAPIView , ProfessorDetailView,CursoUnidadeCurricularProfessorAPIView, ProfessorAPIView ,HoratrabProfAPIView, UnidadeCurricularAPIView ,PessoaAPIView, AreaTecnologicaAPIView, TipoCursoAPIView, CursoAPIView, VinculoAPIView
 
 urlpatterns = [
     path('pessoas/', PessoaAPIView.as_view(), name='pessoas'),
@@ -13,5 +13,7 @@ urlpatterns = [
     path('curso-uc-professor/', CursoUnidadeCurricularProfessorAPIView.as_view(), name='curso-uc-professor-list'),
     path('curso-uc-professor/<int:curso_id>/', CursoUnidadeCurricularProfessorAPIView.as_view(), name='curso-uc-professor-detail'),
     path('professor-details/<int:pk>/', ProfessorDetailView.as_view(), name='professor-detail'),
+    path('calendario-academico/', CalendarioAcademicoAPIView.as_view(), name='calendario-academico-list'),
+    path('calendario-academico/<int:pk>/', CalendarioAcademicoAPIView.as_view(), name='calendario-academico-detail'),
 
 ]

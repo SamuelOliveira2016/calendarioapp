@@ -2,10 +2,11 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
 
 
-from .models import CursoUnidadeCurricularProfessor,Professor, Vinculo ,Pessoa, Tipocurso, Areatecnologica, Curso, UnidadeCurricular, HoratrabProf
-from .serializers import UnidadeCurricularSerializer2 ,CursoUnidadeCurricularProfessorSerializer ,ProfessorSerializer,UnidadeCurricularSerializer,VinculoSerializer, PessoaSerializer, TipoCursoSerializer, AreaTecnologicaSerializer, CursoSerializer, HoratrabProfSerializer
+from .models import CalendarioAcademico ,CursoUnidadeCurricularProfessor,Professor, Vinculo ,Pessoa, Tipocurso, Areatecnologica, Curso, UnidadeCurricular, HoratrabProf
+from .serializers import CalendarioAcademicoSerializer, UnidadeCurricularSerializer2 ,CursoUnidadeCurricularProfessorSerializer ,ProfessorSerializer,UnidadeCurricularSerializer,VinculoSerializer, PessoaSerializer, TipoCursoSerializer, AreaTecnologicaSerializer, CursoSerializer, HoratrabProfSerializer
 
 class PessoaAPIView(APIView):
     def get(self, request):
@@ -129,9 +130,6 @@ class CursoUnidadeCurricularProfessorAPIView(APIView):
         serializer = UnidadeCurricularSerializer2(unidades_curriculares, many=True)
         return Response(serializer.data)
 
-
-
-
 class ProfessorDetailView(APIView):
     def get(self, request, pk):
         professor = Professor.objects.filter(pk=pk).select_related('pessoa').first()
@@ -157,3 +155,29 @@ class ProfessorDetailView(APIView):
         }
 
         return Response(response_data)
+    
+class CalendarioAcademicoAPIView(APIView):
+    def get(self, request):
+        calendarios = CalendarioAcademico.objects.all()
+        serializer = CalendarioAcademicoSerializer(calendarios, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = CalendarioAcademicoSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def put(self, request, pk):
+        calendario = get_object_or_404(CalendarioAcademico, pk=pk)
+        serializer = CalendarioAcademicoSerializer(calendario, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        calendario = get_object_or_404(CalendarioAcademico, pk=pk)
+        calendario.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

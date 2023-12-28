@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import CursoUnidadeCurricularProfessor,Tipocurso, Pessoa, Vinculo, Curso, UnidadeCurricular, Areatecnologica, Professor, HoratrabProf
+from .models import CalendarioAcademico, CursoUnidadeCurricularProfessor,Tipocurso, Pessoa, Vinculo, Curso, UnidadeCurricular, Areatecnologica, Professor, HoratrabProf
 
 
 
@@ -67,7 +67,7 @@ class UnidadeCurricularSerializer2(serializers.ModelSerializer):
         model = UnidadeCurricular
         fields = ['id', 'nome',  'curso']
 
-
-
-
-    
+class CalendarioAcademicoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CalendarioAcademico
+        fields = ['nome','ano_letivo', 'semestre', 'inicio', 'termino']
