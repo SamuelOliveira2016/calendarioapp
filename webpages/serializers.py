@@ -1,10 +1,7 @@
 from rest_framework import serializers
-from .models import Tipocurso, Pessoa, Vinculo, Curso, UnidadeCurricular, Areatecnologica, Professor, HoratrabProf
+from .models import CursoUnidadeCurricularProfessor,Tipocurso, Pessoa, Vinculo, Curso, UnidadeCurricular, Areatecnologica, Professor, HoratrabProf
 
-class PessoaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Pessoa
-        fields = '__all__'
+
 
 class VinculoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -36,7 +33,41 @@ class HoratrabProfSerializer(serializers.ModelSerializer):
         model = HoratrabProf
         fields = '__all__'
 
+class PessoaSerializer(serializers.ModelSerializer):
+    horatrabprof = HoratrabProfSerializer(read_only=True)
+
+    class Meta:
+        model = Pessoa
+        fields = '__all__'
+
 class ProfessorSerializer(serializers.ModelSerializer):
+    nome = serializers.SerializerMethodField()
+    pessoa = PessoaSerializer()
+
+
     class Meta:
         model = Professor
-        fields = ['id', 'nif', 'nivel', 'pessoa']
+        fields = ['id', 'nif', 'nivel', 'pessoa', 'nome']
+
+    def get_nome(self, obj):
+        return obj.pessoa.nome
+
+
+class CursoUnidadeCurricularProfessorSerializer(serializers.ModelSerializer):
+    curso = CursoSerializer()
+    unidadeCurricular = UnidadeCurricularSerializer()  # Incluir o serializer de Unidade Curricular
+
+
+    class Meta:
+        model = CursoUnidadeCurricularProfessor
+        fields = ['curso', 'unidadeCurricular', 'professor']
+
+class UnidadeCurricularSerializer2(serializers.ModelSerializer):
+    class Meta:
+        model = UnidadeCurricular
+        fields = ['id', 'nome',  'curso']
+
+
+
+
+    

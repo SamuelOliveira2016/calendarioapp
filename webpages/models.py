@@ -89,11 +89,6 @@ class Tipocurso(models.Model):
     def __str__(self) -> str:
         return self.get_nome_tipo_curso_display()
 
-
-
-
-    
-
 class Infraestrutura(models.Model):
     TIPO_LABORATORIO = 'laboratorio'
     TIPO_OFICINA = 'oficina'
@@ -129,7 +124,6 @@ class UnidadeCurricular(models.Model):
     carga_horaria = models.IntegerField(blank=True, null=True)
     capacidadesSociais = models.TextField(blank=True)
     capacidadeTecnicaFundamentos = models.TextField(blank=True)
-
     horas_sala_aula = models.IntegerField(blank=True, null=True)
     horas_laboratorio = models.IntegerField(blank=True, null=True)
     horas_oficina = models.IntegerField(blank=True, null=True)
@@ -148,13 +142,9 @@ class Professor(models.Model):
         return f"NOME: {self.pessoa.nome} - NIF: {self.nif} - Nível: {self.nivel}"
 
 class CursoUnidadeCurricularProfessor(models.Model):
-    curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
-    unidade_curricular = models.ForeignKey(UnidadeCurricular, on_delete=models.CASCADE)
-    professores = models.ManyToManyField(Professor)
-
-
-
-
+    curso = models.ForeignKey(Curso, on_delete=models.CASCADE, default=0)
+    unidadeCurricular = models.ForeignKey(UnidadeCurricular, on_delete=models.CASCADE)
+    professor = models.ForeignKey(Professor, on_delete=models.CASCADE, default=0)  # Mudança aqui
 
 class CalendarioAcademico(models.Model):
     ano_letivo = models.IntegerField()
