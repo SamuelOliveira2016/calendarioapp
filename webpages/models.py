@@ -5,6 +5,10 @@ from datetime import datetime, timedelta
 from django.core.exceptions import ValidationError
 from .google_calendar import fetch_holidays
 
+from .schedule_validators import (is_aula_disponivel_no_dia_letivo, 
+                                  is_infraestrutura_disponivel, 
+                                  is_professor_disponivel, 
+                                  is_carga_horaria_respeitada)
 
 
 
@@ -136,6 +140,17 @@ class Professor(models.Model):
     nif = models.CharField(max_length=20, unique=True)
     nivel = models.CharField(max_length=100, null=True, blank=True)
 
+    def disponivel_no_horario(self, data, horario_inicio, horario_fim):
+        # Verificar se o professor já tem aula marcada nesse horário
+        aulas_no_mesmo_horario = Aula.objects.filter(
+            curso_uc_professor__professor=self,
+            calendarioaula__dia_letivo__data=data,
+            horario_inicio__lt=horario_fim,
+            horario_fim__gt=horario_inicio
+        )
+
+        return not aulas_no_mesmo_horario.exists()
+
     def __str__(self):
         return f"NOME: {self.pessoa.nome} - NIF: {self.nif} - Nível: {self.nivel}"
 
@@ -191,24 +206,43 @@ class DiaLetivo(models.Model):
 
 class Evento(models.Model):
     nome = models.CharField(max_length=100)
-    data = models.DateField()
+    data_inicio = models.DateField(default='1970-02-15')
+    data_fim = models.DateField()
     descricao = models.TextField()
     calendario_academico = models.ForeignKey(CalendarioAcademico, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.nome} - {self.data}"
-
+        return f"Nome do Evento: {self.nome} - Calendário Acadêmico: {self.calendario_academico.nome}"
 
 class Aula(models.Model):
     curso_uc_professor = models.ForeignKey(CursoUnidadeCurricularProfessor, on_delete=models.CASCADE)
-    infraestrutura = models.ForeignKey(Infraestrutura, on_delete=models.CASCADE)
+    infraestrutura = models.ForeignKey(Infraestrutura, on_delete=models.CASCADE)  # Mudança aqui
     horario_inicio = models.TimeField()
     horario_fim = models.TimeField()
 
+    def save(self, *args, **kwargs):
+        # Certifique-se de que o horário final seja calculado somente se necessário
+        if self.horario_inicio and not self.horario_fim and self.infraestrutura:
+            uc = self.curso_uc_professor.unidadeCurricular
+            total_minutos = 0
+
+            # Agora a lógica depende de uma única infraestrutura
+            if self.infraestrutura.tipo == Infraestrutura.TIPO_LABORATORIO:
+                total_minutos = uc.horas_laboratorio * 60
+            elif self.infraestrutura.tipo == Infraestrutura.TIPO_OFICINA:
+                total_minutos = uc.horas_oficina * 60
+            elif self.infraestrutura.tipo == Infraestrutura.TIPO_SALA_DE_AULA:
+                total_minutos = uc.horas_sala_aula * 60
+
+            if total_minutos:
+                self.horario_fim = self.horario_inicio + timedelta(minutes=total_minutos)
+
+        super(Aula, self).save(*args, **kwargs)
+
     def __str__(self):
-        uc_nome = self.curso_uc_professor.unidade_curricular.nome
-        infra_nome = self.infraestrutura.get_tipo_display()
-        return f"Aula de {uc_nome} em {infra_nome} ({self.horario_inicio}-{self.horario_fim})"
+        uc_nome = self.curso_uc_professor.unidadeCurricular.nome
+        return f"Aula de {uc_nome} em {self.infraestrutura.nome} ({self.horario_inicio}-{self.horario_fim}) {self.id}"
+
 
 class CalendarioAula(models.Model):
     aula = models.ForeignKey(Aula, on_delete=models.CASCADE)
@@ -218,21 +252,27 @@ class CalendarioAula(models.Model):
         return f"{self.aula} no dia {self.dia_letivo.data}"
 
     def clean(self):
-        # Validação de sobreposição de horários para a mesma infraestrutura
-        aulas_no_mesmo_dia_e_local = CalendarioAula.objects.filter(
-            aula__infraestrutura=self.aula.infraestrutura,
-            dia_letivo=self.dia_letivo
-        ).exclude(id=self.id)
+        # Buscar aulas alocadas
+        aulas_alocadas = Aula.objects.filter(
+            curso_uc_professor__unidadeCurricular=self.aula.curso_uc_professor.unidadeCurricular
+        ).filter(
+            calendarioaula__isnull=False
+        )
+        # Verificação se a aula pode ser alocada neste dia letivo sem conflitos
+        if not is_aula_disponivel_no_dia_letivo(self.aula, self.dia_letivo):
+            raise ValidationError("Aula indisponível para este dia letivo.")
 
-        for outra_aula in aulas_no_mesmo_dia_e_local:
-            if (self.aula.horario_inicio < outra_aula.aula.horario_fim and
-                self.aula.horario_fim > outra_aula.aula.horario_inicio):
-                raise ValidationError("Conflito de horário na infraestrutura selecionada.")
+        # Verificação da disponibilidade da infraestrutura no horário da aula
+        if not is_infraestrutura_disponivel(self.aula, self.aula.horario_inicio, self.aula.horario_fim):
+            raise ValidationError("Infraestrutura indisponível no horário da aula.")
 
-        # Validação da disponibilidade do professor
-        for professor in self.aula.curso_uc_professor.professores.all():
-            if not professor.disponivel_no_horario(self.dia_letivo.data, self.aula.horario_inicio):
-                raise ValidationError(f"O professor {professor.nome} não está disponível neste horário.")
+        # Verificação da disponibilidade do professor no horário da aula
+        if not is_professor_disponivel(self.aula, self.aula.horario_inicio, self.aula.horario_fim):
+            raise ValidationError("Professor não disponível no horário da aula.")
+
+        # Verificação da carga horária da unidade curricular
+        if not is_carga_horaria_respeitada(self.aula.curso_uc_professor.unidadeCurricular, self.aula, aulas_alocadas):
+            raise ValidationError("A carga horária para esta unidade curricular já foi atingida ou excedida.")
 
     def save(self, *args, **kwargs):
         self.clean()

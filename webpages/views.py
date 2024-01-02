@@ -3,10 +3,12 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
+from django.http import Http404
+from .aula_distributor import alocar_aulas
+from django.views.decorators.csrf import csrf_exempt
 
-
-from .models import CalendarioAcademico ,CursoUnidadeCurricularProfessor,Professor, Vinculo ,Pessoa, Tipocurso, Areatecnologica, Curso, UnidadeCurricular, HoratrabProf
-from .serializers import CalendarioAcademicoSerializer, UnidadeCurricularSerializer2 ,CursoUnidadeCurricularProfessorSerializer ,ProfessorSerializer,UnidadeCurricularSerializer,VinculoSerializer, PessoaSerializer, TipoCursoSerializer, AreaTecnologicaSerializer, CursoSerializer, HoratrabProfSerializer
+from .models import Infraestrutura, CalendarioAula,Aula,Evento, CalendarioAcademico ,CursoUnidadeCurricularProfessor,Professor, Vinculo ,Pessoa, Tipocurso, Areatecnologica, Curso, UnidadeCurricular, HoratrabProf
+from .serializers import InfraestruturaSerializer, CalendarioAulaSerializer, AulaSerializer, EventoSerializer, CalendarioAcademicoSerializer, UnidadeCurricularSerializer2 ,CursoUnidadeCurricularProfessorSerializer ,ProfessorSerializer,UnidadeCurricularSerializer,VinculoSerializer, PessoaSerializer, TipoCursoSerializer, AreaTecnologicaSerializer, CursoSerializer, HoratrabProfSerializer
 
 class PessoaAPIView(APIView):
     def get(self, request):
@@ -116,7 +118,11 @@ class ProfessorAPIView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class CursoUnidadeCurricularProfessorAPIView(APIView):
-    # Método POST para criar uma nova associação
+    def get(self, request):
+        cursos_uc_professor = CursoUnidadeCurricularProfessor.objects.all()
+        serializer = CursoUnidadeCurricularProfessorSerializer(cursos_uc_professor, many=True)
+        return Response(serializer.data)
+
     def post(self, request):
         serializer = CursoUnidadeCurricularProfessorSerializer(data=request.data)
         if serializer.is_valid():
@@ -124,11 +130,38 @@ class CursoUnidadeCurricularProfessorAPIView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    # Método GET para filtrar unidades curriculares com base no curso
+class CursoUnidadeCurricularProfessorDetailAPIView(APIView):
+    def get_object(self, curso_id):
+        try:
+            return CursoUnidadeCurricularProfessor.objects.get(pk=curso_id)
+        except CursoUnidadeCurricularProfessor.DoesNotExist:
+            raise Http404
+
     def get(self, request, curso_id):
-        unidades_curriculares = UnidadeCurricular.objects.filter(curso=curso_id)
-        serializer = UnidadeCurricularSerializer2(unidades_curriculares, many=True)
+        curso_uc_professor = self.get_object(curso_id)
+        serializer = CursoUnidadeCurricularProfessorSerializer(curso_uc_professor)
         return Response(serializer.data)
+
+    def put(self, request, curso_id):
+        curso_uc_professor = self.get_object(curso_id)
+        serializer = CursoUnidadeCurricularProfessorSerializer(curso_uc_professor, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def patch(self, request, curso_id):
+        curso_uc_professor = self.get_object(curso_id)
+        serializer = CursoUnidadeCurricularProfessorSerializer(curso_uc_professor, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, curso_id):
+        curso_uc_professor = self.get_object(curso_id)
+        curso_uc_professor.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 class ProfessorDetailView(APIView):
     def get(self, request, pk):
@@ -181,3 +214,210 @@ class CalendarioAcademicoAPIView(APIView):
         calendario = get_object_or_404(CalendarioAcademico, pk=pk)
         calendario.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+class EventoAPIView(APIView):
+    def get(self, request):
+        eventos = Evento.objects.all()
+        serializer = EventoSerializer(eventos, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = EventoSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def put(self, request, pk):
+        try:
+            evento = Evento.objects.get(pk=pk)
+        except Evento.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+        serializer = EventoSerializer(evento, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def patch(self, request, pk):
+        try:
+            evento = Evento.objects.get(pk=pk)
+        except Evento.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+        serializer = EventoSerializer(evento, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        try:
+            evento = Evento.objects.get(pk=pk)
+        except Evento.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        
+        evento.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+class AulaAPIView(APIView):
+    def get(self, request):
+        aulas = Aula.objects.all()
+        serializer = AulaSerializer(aulas, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = AulaSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    def put(self, request, pk):
+        try:
+            aula = Aula.objects.get(pk=pk)
+        except Aula.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+        serializer = AulaSerializer(aula, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def patch(self, request, pk):
+        try:
+            aula = Aula.objects.get(pk=pk)
+        except Aula.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+        serializer = AulaSerializer(aula, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        try:
+            aula = Aula.objects.get(pk=pk)
+        except Aula.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        
+        aula.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+    
+class CalendarioAulaAPIView(APIView):
+    def get(self, request):
+        calendario_aulas = CalendarioAula.objects.all()
+        serializer = CalendarioAulaSerializer(calendario_aulas, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = CalendarioAulaSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def put(self, request, pk):
+        try:
+            calendario_aula = CalendarioAula.objects.get(pk=pk)
+        except CalendarioAula.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+        serializer = CalendarioAulaSerializer(calendario_aula, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def patch(self, request, pk):
+        try:
+            calendario_aula = CalendarioAula.objects.get(pk=pk)
+        except CalendarioAula.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+        serializer = CalendarioAulaSerializer(calendario_aula, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        try:
+            calendario_aula = CalendarioAula.objects.get(pk=pk)
+        except CalendarioAula.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        
+        calendario_aula.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+    
+class InfraestruturaAPIView(APIView):
+    # Método para listar todas as infraestruturas ou criar uma nova
+    def get(self, request):
+        infraestruturas = Infraestrutura.objects.all()
+        serializer = InfraestruturaSerializer(infraestruturas, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = InfraestruturaSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class InfraestruturaDetailAPIView(APIView):
+
+    # Método auxiliar para obter uma infraestrutura pelo ID
+    def get_object(self, pk):
+        try:
+            return Infraestrutura.objects.get(pk=pk)
+        except Infraestrutura.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+    # Método para obter detalhes de uma infraestrutura específica
+    def get(self, request, pk):
+        infraestrutura = self.get_object(pk)
+        serializer = InfraestruturaSerializer(infraestrutura)
+        return Response(serializer.data)
+
+    # Método para atualizar uma infraestrutura
+    def put(self, request, pk):
+        infraestrutura = self.get_object(pk)
+        serializer = InfraestruturaSerializer(infraestrutura, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    # Método para atualização parcial de uma infraestrutura
+    def patch(self, request, pk):
+        infraestrutura = self.get_object(pk)
+        serializer = InfraestruturaSerializer(infraestrutura, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    # Método para deletar uma infraestrutura
+    def delete(self, request, pk):
+        infraestrutura = self.get_object(pk)
+        if infraestrutura is not None:
+            infraestrutura.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
+
+
+@csrf_exempt  # Remova isso se você estiver usando CSRF token na sua aplicação
+def alocar_aula_view(request):
+    if request.method == 'POST':
+        # Lógica para lidar com requisições POST
+        # Supondo que alocar_aulas() está sendo chamada corretamente
+        alocar_aulas()
+        return JsonResponse({"mensagem": "Aula alocada com sucesso"})
+
+    else:
+        # Se a requisição não for POST, retorna uma resposta indicando método não suportado
+        return JsonResponse({"erro": "Método não suportado"}, status=405)
