@@ -18,8 +18,12 @@ class Pessoa(models.Model):
     telefone = models.CharField(max_length=20, blank=True, null=True)
     email = models.EmailField()
 
+    class Meta:
+        ordering = ['nome']
+
     def __str__(self) -> str:
         return self.nome
+
 
 class Vinculo(models.Model):
     HORISTA = 'horista'
@@ -67,6 +71,9 @@ class HoratrabProf(models.Model):
             return "Manhã e Tarde"
         else:
             return "Noite"
+        
+    class Meta:
+        ordering = ['pessoa']
 
     def __str__(self):
         return f"{self.pessoa.nome} - {self.turno()} - {self.quanthorames} horas/mês"
@@ -74,6 +81,9 @@ class HoratrabProf(models.Model):
 class Areatecnologica(models.Model):
     nome = models.CharField(max_length=255)
     descricao = models.TextField()
+
+    class Meta:
+        ordering = ['nome']
 
     def __str__(self) -> str:
         return self.nome
@@ -110,6 +120,9 @@ class Infraestrutura(models.Model):
     tipo = models.CharField(max_length=20, choices=TIPO_AMBIENTE_CHOICES)
     capacidade = models.IntegerField(blank=True, null=True)
 
+    class Meta:
+        ordering = ['nome']
+
     def __str__(self):
         return f"{self.nome} ({self.get_tipo_display()}) - Capacidade: {self.capacidade}"
 
@@ -119,6 +132,9 @@ class Curso(models.Model):
     tipo_curso = models.ForeignKey(Tipocurso, on_delete=models.SET_NULL, null=True, blank=True)
     areatecnologica = models.ManyToManyField(Areatecnologica, blank=True)
     
+    class Meta:
+        ordering = ['nome']
+
     def __str__(self):
         return self.nome
 
@@ -131,6 +147,10 @@ class UnidadeCurricular(models.Model):
     horas_laboratorio = models.IntegerField(blank=True, null=True)
     horas_oficina = models.IntegerField(blank=True, null=True)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE, blank=True, null=True)
+    
+    class Meta:
+        ordering = ['nome']
+    
     def __str__(self):
         return self.nome   
 
@@ -150,6 +170,9 @@ class Professor(models.Model):
         )
 
         return not aulas_no_mesmo_horario.exists()
+
+    class Meta:
+        ordering = ['pessoa']
 
     def __str__(self):
         return f"NOME: {self.pessoa.nome} - NIF: {self.nif} - Nível: {self.nivel}"
