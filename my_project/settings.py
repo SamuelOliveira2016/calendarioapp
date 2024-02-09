@@ -27,6 +27,9 @@ SECRET_KEY = 'django-insecure-9r28rl*=&v8**agfl9--egk9@!(qclyx@6@=eez!*8-1jofch!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+AUTH_USER_MODEL = 'accountsapp.CustomUser'
+
+
 ALLOWED_HOSTS = ["*"]
 
 CORS_ALLOW_ALL_ORIGINS = True
@@ -43,8 +46,18 @@ INSTALLED_APPS = [
     'webpages.apps.WebpagesConfig',
     'rest_framework',
     'corsheaders',
+    'accountsapp',
+    'rest_framework.authtoken',
+
 
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
