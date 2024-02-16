@@ -97,13 +97,13 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+	'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'hovoqlqo',
-        'USER': 'hovoqlqo',
-        'PASSWORD': '0yLOTa-1eopopCDOhfI9fK2UsrbkQIBc',
-        'HOST': 'motty.db.elephantsql.com',
+        'USER': 'admin',
+        'PASSWORD': 'calendario',
+        'HOST': '10.92.6.122',
         'PORT': '5432',
-    }
+	}
 }
 
 

@@ -75,7 +75,7 @@ class UnidadeCurricularSerializer2(serializers.ModelSerializer):
 class CalendarioAcademicoSerializer(serializers.ModelSerializer):
     class Meta:
         model = CalendarioAcademico
-        fields = ['id', 'aula','dia_letivo','nome','ano_letivo', 'semestre', 'inicio', 'termino']
+        fields = '__all__'
 
 
 
