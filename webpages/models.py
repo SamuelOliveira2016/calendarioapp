@@ -155,7 +155,7 @@ class UnidadeCurricular(models.Model):
         return self.nome   
 
 class Professor(models.Model):
-    id = models.AutoField(primary_key=True, default=0)  # Escolha um valor padrão adequado
+    id = models.AutoField(primary_key=True)  # Removido o default=0
     pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE, null=True)  # null=True permite valores nulos
     nif = models.CharField(max_length=20, unique=True)
     nivel = models.CharField(max_length=100, null=True, blank=True)

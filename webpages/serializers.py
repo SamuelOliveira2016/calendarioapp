@@ -46,7 +46,7 @@ class PessoaSerializer(serializers.ModelSerializer):
 
 class ProfessorSerializer(serializers.ModelSerializer):
     nome = serializers.SerializerMethodField()
-    pessoa = PessoaSerializer()
+    pessoa = serializers.PrimaryKeyRelatedField(queryset=Pessoa.objects.all())
 
 
     class Meta:
