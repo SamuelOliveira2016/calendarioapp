@@ -1,0 +1,24 @@
+2024-02-22 12:48:06.272 [info] Started local extension host with pid 649903.
+2024-02-22 12:48:06.384 [info] Started initializing default profile extensions in extensions installation folder. file:///root/.vscode/extensions
+2024-02-22 12:48:06.783 [info] Completed initializing default profile extensions in extensions installation folder. file:///root/.vscode/extensions
+2024-02-22 12:48:09.593 [info] [perf] Render performance baseline is 40ms
+2024-02-22 12:48:25.791 [info] Started local extension host with pid 650091.
+2024-02-22 12:48:28.722 [info] [perf] Render performance baseline is 81ms
+2024-02-22 12:48:40.011 [error] Cancelled: Canceled
+    at re.B (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:32466)
+    at async re.z (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:29361)
+    at async ne (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:28369)
+    at async re.query (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:28590)
+    at async oe.queryGallery (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:11958)
+    at async te.Ac (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:22427)
+    at async te.lc (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:14478)
+    at async vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:12777
+2024-02-22 12:48:40.011 [error] Cancelled: Canceled
+    at re.B (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:32466)
+    at async re.z (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:29361)
+    at async re.getExtensions (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:26345)
+    at async oe.getExtensions (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:12374)
+    at async ge.Ec (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:24452)
+    at async ge.Nc (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:27116)
+    at async ge.lc (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:14478)
+    at async vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:12777

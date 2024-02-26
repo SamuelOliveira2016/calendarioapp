@@ -1,0 +1,53 @@
+2024-02-22 12:48:51.043 [error] [uncaught exception in sharedProcess]: Event not found: onDidChange: CodeExpectedError: Event not found: onDidChange
+    at Object.listen (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:45:4959)
+    at E.t (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:44:251)
+    at E.q (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:4371)
+    at w.value (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:3602)
+    at d.y (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1902)
+    at d.z (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1972)
+    at d.fire (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:2188)
+    at MessagePortMain.de (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:36:30422)
+    at MessagePortMain.emit (node:events:514:28)
+    at Object.emit (node:electron/js2c/utility_init:2:2285)
+2024-02-22 12:51:23.176 [info] Getting Manifest... ms-python.python
+2024-02-22 12:51:23.234 [info] Installing extension: ms-python.python
+2024-02-22 12:51:24.045 [info] Getting Manifest... ms-python.vscode-pylance
+2024-02-22 12:51:24.058 [info] Getting Manifest... ms-python.debugpy
+2024-02-22 12:51:24.163 [info] Installing extension: ms-python.vscode-pylance ms-python.python
+2024-02-22 12:51:24.163 [info] Installing extension: ms-python.debugpy ms-python.python
+2024-02-22 12:51:25.377 [info] Extension signature is verified: ms-python.debugpy
+2024-02-22 12:51:25.456 [info] Extension signature is verified: ms-python.python
+2024-02-22 12:51:26.374 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.debugpy-2024.0.0-linux-x64: ms-python.debugpy
+2024-02-22 12:51:26.389 [info] Renamed to /root/.vscode/extensions/ms-python.debugpy-2024.0.0-linux-x64
+2024-02-22 12:51:26.392 [info] Extracting extension completed. ms-python.debugpy
+2024-02-22 12:51:26.479 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30119)
+    at a (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30234)
+    at i.fb (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36631)
+    at i.stat (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29077)
+    at async v.stat (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16223)
+    at async Y.tb (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:108626)
+2024-02-22 12:51:27.936 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.python-2024.0.1: ms-python.python
+2024-02-22 12:51:27.950 [info] Renamed to /root/.vscode/extensions/ms-python.python-2024.0.1
+2024-02-22 12:51:27.956 [info] Extracting extension completed. ms-python.python
+2024-02-22 12:51:28.054 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30119)
+    at a (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30234)
+    at i.fb (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36631)
+    at i.stat (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29077)
+    at async v.stat (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16223)
+    at async Y.tb (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:108626)
+2024-02-22 12:51:33.591 [info] Extension signature is verified: ms-python.vscode-pylance
+2024-02-22 12:51:37.388 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2: ms-python.vscode-pylance
+2024-02-22 12:51:37.425 [info] Renamed to /root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2
+2024-02-22 12:51:37.429 [info] Extracting extension completed. ms-python.vscode-pylance
+2024-02-22 12:51:37.443 [info] Extension installed successfully: ms-python.debugpy
+2024-02-22 12:51:37.443 [info] Extension installed successfully: ms-python.python
+2024-02-22 12:51:37.443 [info] Extension installed successfully: ms-python.vscode-pylance
+2024-02-22 12:51:37.516 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30119)
+    at a (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30234)
+    at i.fb (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36631)
+    at i.stat (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29077)
+    at async v.stat (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16223)
+    at async Y.tb (/snap/code/152/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:108626)
