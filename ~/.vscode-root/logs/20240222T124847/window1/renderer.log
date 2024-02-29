@@ -1,0 +1,11 @@
+2024-02-22 12:48:49.217 [info] Started local extension host with pid 650504.
+2024-02-22 12:48:52.114 [info] [perf] Render performance baseline is 69ms
+2024-02-22 12:51:23.469 [error] Cancelled: Canceled
+    at re.B (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:32466)
+    at async re.z (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:29361)
+    at async re.getExtensions (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:782:26345)
+    at async oe.getExtensions (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2741:12374)
+    at async ge.Ec (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:24452)
+    at async ge.Nc (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:27116)
+    at async ge.lc (vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:14478)
+    at async vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2677:12777

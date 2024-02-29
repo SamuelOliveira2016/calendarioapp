@@ -1,0 +1,32 @@
+2024-02-22 12:48:07.557 [info] Log level: Info
+2024-02-22 12:48:07.557 [info] Validating found git in: "git"
+2024-02-22 12:48:07.557 [info] Using git "2.34.1" from "git"
+2024-02-22 12:48:28.310 [info] Log level: Info
+2024-02-22 12:48:28.310 [info] Validating found git in: "git"
+2024-02-22 12:48:28.310 [info] Using git "2.34.1" from "git"
+2024-02-22 12:48:28.310 [info] > git rev-parse --show-toplevel [6ms]
+2024-02-22 12:48:28.311 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-02-22 12:48:28.326 [info] Open repository: /home/servidor/calendarioapp
+2024-02-22 12:48:28.345 [info] > git rev-parse --show-toplevel [3ms]
+2024-02-22 12:48:28.346 [info] > git config --get commit.template [11ms]
+2024-02-22 12:48:28.364 [info] > git rev-parse --show-toplevel [11ms]
+2024-02-22 12:48:28.371 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [9ms]
+2024-02-22 12:48:28.373 [info] > git rev-parse --show-toplevel [2ms]
+2024-02-22 12:48:28.385 [info] > git rev-parse --show-toplevel [7ms]
+2024-02-22 12:48:28.395 [info] > git rev-parse --show-toplevel [3ms]
+2024-02-22 12:48:28.408 [info] > git rev-parse --show-toplevel [3ms]
+2024-02-22 12:48:28.546 [info] > git status -z -uall [162ms]
+2024-02-22 12:48:28.588 [info] > git config --get commit.template [11ms]
+2024-02-22 12:48:28.590 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2024-02-22 12:48:28.795 [info] > git status -z -uall [195ms]
+2024-02-22 12:48:28.878 [info] > git check-ignore -v -z --stdin [24ms]
+2024-02-22 12:48:30.889 [info] > git check-ignore -v -z --stdin [20ms]
+2024-02-22 12:48:31.840 [info] > git config --get commit.template [5ms]
+2024-02-22 12:48:31.841 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-02-22 12:48:31.976 [info] > git status -z -uall [129ms]
+2024-02-22 12:48:32.874 [info] > git show --textconv :webpages/serializers.py [11ms]
+2024-02-22 12:48:32.883 [info] > git ls-files --stage -- /home/servidor/calendarioapp/webpages/serializers.py [10ms]
+2024-02-22 12:48:32.891 [info] > git cat-file -s 14de3d1ac64e29569ef15b63addf19d6dddd3275 [3ms]
+2024-02-22 12:48:37.004 [info] > git config --get commit.template [8ms]
+2024-02-22 12:48:37.005 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2024-02-22 12:48:37.140 [info] > git status -z -uall [127ms]
