@@ -129,3 +129,23 @@
 2024-02-23 20:58:23.364 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
 2024-02-23 20:59:22.908 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
 2024-02-26 15:49:11.325 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 12:57:12.782 [error] Custom .env is likely not pointing to a valid file [EntryIsADirectory (FileSystemError): Error: EISDIR: illegal operation on a directory, read
+	at E.e (/snap/code/152/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:149:6267)
+	at Object.readFile (/snap/code/152/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:149:4464)
+	at async b.readText (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:192205)
+	at async f.parseFile (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:318368)
+	at async v._getEnvironmentVariables (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:323051)
+	at async v.getEnvironmentVariables (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:322218)
+	at async u.create (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:213330)
+	at async b.normalizeLines (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:722419)
+	at async b.executeSelection (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:716238)
+	at async b.executeSelectionInTerminal (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:715827)
+	at async /root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:714254
+	at async s.h (/snap/code/152/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:150:175235)] {
+  code: 'FileIsADirectory'
+}
+2024-02-29 12:57:12.801 [info] > ./venv/bin/python ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/normalizeSelection.py
+2024-02-29 12:57:12.945 [info] Send text to terminal: /home/servidor/calendarioapp/venv/bin/python
+2024-02-29 12:58:57.639 [info] > ./venv/bin/python ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/normalizeSelection.py
+2024-02-29 12:58:57.725 [info] Selected file contains invalid Python or Deprecated Python 2 code
+2024-02-29 13:04:12.592 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py

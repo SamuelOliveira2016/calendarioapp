@@ -498,7 +498,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Painel"
+                                    "label": "&&Painel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "toggle.toggleCustomTitleBar",
@@ -1138,8 +1139,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Dividir o Terminal",
-                        "enabled": false
+                        "label": "&&Dividir o Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
