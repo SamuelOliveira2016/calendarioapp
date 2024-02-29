@@ -7,18 +7,16 @@ from django.http import Http404
 from .aula_distributor import alocar_aulas
 from django.views.decorators.csrf import csrf_exempt
 
-from .models import (CapacidadesFundamentos,CadastroEscola,AulaInfraestrutura, Infraestrutura, CalendarioAula,Aula,Evento,
+from .models import (CadastroEscola,AulaInfraestrutura, Infraestrutura, CalendarioAula,Aula,Evento,
                      CalendarioAcademico ,CursoUnidadeCurricularProfessor,Pessoa,
                      Areatecnologica, Curso, UnidadeCurricular, HoratrabProf)
-from .serializers import (CapacidadesFundamentosSerializer, CadastroEscolaSerializer, InfraestruturaSerializer, AulaInfraestruturaSerializer, CalendarioAulaSerializer,
+from .serializers import (CadastroEscolaSerializer, InfraestruturaSerializer, AulaInfraestruturaSerializer, CalendarioAulaSerializer,
                           AulaSerializer, EventoSerializer, CalendarioAcademicoSerializer,
                           UnidadeCurricularSerializer2 ,CursoUnidadeCurricularProfessorSerializer ,
                           UnidadeCurricularSerializer, PessoaSerializer,
                           AreaTecnologicaSerializer, CursoSerializer, HoratrabProfSerializer)
 
 class EventoAPIView(APIView):
-    '''APIview para Eventos, operações CRUD completas'''
-
     def get(self, request):
         eventos = Evento.objects.all()
         serializer = EventoSerializer(eventos, many=True)
@@ -65,8 +63,6 @@ class EventoAPIView(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 class CadastroEscolaAPIView(APIView):
-    '''APIview para cadastro de unidades que poderão utilizar a aplicação, operações CRUD completas'''
-
     def get(self, request):
         cadastro = CadastroEscola.objects.all()
         serializer = EventoSerializer(cadastro, many=True)
@@ -111,101 +107,6 @@ class CadastroEscolaAPIView(APIView):
 
         cadastro.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-    
-class CapacidadesFundamentosAPIView(APIView):
-    '''APIview para capacidades e fundamentos técnicos operações CRUD completas'''
-
-    def get(self, request):
-        capacidade = CapacidadesFundamentos.objects.all()
-        serializer = CapacidadesFundamentosSerializer(capacidade, many=True)
-        return Response(serializer.data)
-
-    def post(self, request):
-        serializer = CapacidadesFundamentosSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def put(self, request, pk):
-        try:
-            capacidade = CapacidadesFundamentos.objects.get(pk=pk)
-        except CapacidadesFundamentos.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-
-        serializer = CadastroEscolaSerializer(capacidade, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def patch(self, request, pk):
-        try:
-            capacidade = CapacidadesFundamentos.objects.get(pk=pk)
-        except CapacidadesFundamentos.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-
-        serializer = CapacidadesFundamentosSerializer(capacidade, data=request.data, partial=True)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def delete(self, request, pk):
-        try:
-            capacidade = CapacidadesFundamentos.objects.get(pk=pk)
-        except CapacidadesFundamentos.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-
-        capacidade.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-class UnidadeCurricularAPIView(APIView):
-    '''APIview para Unidade Curricular operações CRUD completas'''
-    def get(self, request):
-        unidades_curriculares = UnidadeCurricular.objects.all()
-        serializer = UnidadeCurricularSerializer(unidades_curriculares, many=True)
-        return Response(serializer.data)
-
-    def post(self, request):
-        serializer = UnidadeCurricularSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    def put(self, request, pk):
-        try:
-            unidade = UnidadeCurricular.objects.get(pk=pk)
-        except UnidadeCurricular.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-
-        serializer = UnidadeCurricularSerializer(unidade, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def patch(self, request, pk):
-        try:
-            unidade = UnidadeCurricular.objects.get(pk=pk)
-        except UnidadeCurricular.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-
-        serializer = UnidadeCurricularSerializer(unidade, data=request.data, partial=True)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def delete(self, request, pk):
-        try:
-            unidade = UnidadeCurricular.objects.get(pk=pk)
-        except UnidadeCurricular.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-
-        unidade.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
 
 class PessoaAPIView(APIView):
     def get(self, request):
@@ -247,6 +148,7 @@ class AreaTecnologicaAPIView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class CursoAPIView(APIView):
     def get(self, request):
         cursos = Curso.objects.all()
@@ -259,6 +161,19 @@ class CursoAPIView(APIView):
             serializer.save()
             return Response(serializer.data, status=201)
         return Response(serializer.errors, status=400)
+
+class UnidadeCurricularAPIView(APIView):
+    def get(self, request):
+        unidades_curriculares = UnidadeCurricular.objects.all()
+        serializer = UnidadeCurricularSerializer(unidades_curriculares, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = UnidadeCurricularSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class DetalhesUnidadeCurricularAPIView(APIView):
     def get(self, request, pk):
@@ -384,6 +299,8 @@ class CalendarioAcademicoAPIView(APIView):
         calendario = get_object_or_404(CalendarioAcademico, pk=pk)
         calendario.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
 
 class AulaInfraestruturaAPIView(APIView):
     def get(self, request):

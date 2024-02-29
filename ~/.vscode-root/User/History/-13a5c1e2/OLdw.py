@@ -18,12 +18,6 @@ class CapacidadesFundamentosSerializer(serializers.ModelSerializer):
         model = CapacidadesFundamentos
         fields = ['id', 'descricao', 'tipo']
 
-class UnidadeCurricularSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UnidadeCurricular
-        fields = ['id','descricao','carga_horaria', 'capacidadeFundamentos','cor']
-
-
 class DiaLetivoSerializer(serializers.ModelSerializer):
     class Meta:
         model = DiaLetivo
@@ -39,6 +33,11 @@ class CursoSerializer(serializers.ModelSerializer):
         model = Curso
         fields = '__all__'
 
+class UnidadeCurricularSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = UnidadeCurricular
+        fields = ['nome','id', 'horas_sala_aula','horas_laboratorio','horas_oficina','nome','carga_horaria', 'curso']
 
 class HoratrabProfSerializer(serializers.ModelSerializer):
     class Meta:

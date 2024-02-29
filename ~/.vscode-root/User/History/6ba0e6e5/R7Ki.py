@@ -34,40 +34,6 @@ class CadastroEscola(models.Model):
     descricao = models.CharField(max_length=100)
     unidade = models.CharField(max_length = 3)
 
-    def __str__(self):
-        return self.unidade
-
-class CapacidadesFundamentos(models.Model):
-    '''Modelo para alocação de capacidades ou fundamentos técnicos
-    e capacidades Socioemocionais, os dados relacionados são descrição e tipo que deverá 
-    ser escolhido entre as duas opções possiveis'''
-    descricao = models.CharField(max_length=100)
-
-    TIPO_CHOICE = ((1,'Fundamentos'),
-                   (2, 'Técnica'),
-                   (3, 'Socioemocional'))
-    
-    tipo = models.IntegerField(choices=TIPO_CHOICE)
-
-    def __str__(self):
-        return self.descricao
-    
-
-class UnidadeCurricular(models.Model):
-    '''Modelo para alocação de unidades curriculares, possui uma chave estrangeira
-    do modelo CapacidadesFundamentos, os dados necessários sâo descrição,
-    carga horaria total da unidade e a cor(A cor é para representação no Frond-end)'''
-    descricao = models.CharField(max_length=100)
-    carga_horaria = models.IntegerField(blank=True, null=True)
-    capacidadeFundamentos = models.ForeignKey(CapacidadesFundamentos, on_delete=models.CASCADE, blank=True, null=True)
-    cor = models.CharField(max_length=10, blank=True)
-    
-    class Meta:
-        ordering = ['descricao']
-    
-    def __str__(self):
-        return self.descricao
-    
 class Pessoa(models.Model):
     COORDENADOR = 'Coordenador'
     ISTRUTOR = 'Instrutor'
@@ -234,7 +200,19 @@ class Curso(models.Model):
     def __str__(self):
         return self.nome
 
-
+class UnidadeCurricular(models.Model):
+    nome = models.CharField(max_length=100)
+    carga_horaria = models.IntegerField(blank=True, null=True)
+    horas_sala_aula = models.IntegerField(blank=True, null=True)
+    horas_laboratorio = models.IntegerField(blank=True, null=True)
+    horas_oficina = models.IntegerField(blank=True, null=True)
+    curso = models.ForeignKey(Curso, on_delete=models.CASCADE, blank=True, null=True)
+    
+    class Meta:
+        ordering = ['nome']
+    
+    def __str__(self):
+        return self.nome
 
 class Capacidades(models.Model):
     capacidadesSociais = models.TextField(blank=True)

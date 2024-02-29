@@ -4,7 +4,7 @@ from .views import (DetalhesUnidadeCurricularAPIView, alocar_aula_view,
                     InfraestruturaDetailAPIView, CalendarioAulaAPIView, AulaAPIView, AulaInfraestruturaAPIView,
                     EventoAPIView, CalendarioAcademicoAPIView , ProfessorDetailView,CursoUnidadeCurricularProfessorAPIView,
                     HoratrabProfAPIView, UnidadeCurricularAPIView ,PessoaAPIView, AreaTecnologicaAPIView,CursoAPIView,
-                    CadastroEscolaAPIView, CapacidadesFundamentosAPIView)
+                    CadastroEscolaAPIView)
 
 urlpatterns = [
     path('pessoas/', PessoaAPIView.as_view(), name='pessoas'),
@@ -29,6 +29,5 @@ urlpatterns = [
     path('infraestruturas/<int:pk>/', InfraestruturaDetailAPIView.as_view(), name='infraestrutura-detail'),
     path('alocar_aula/', alocar_aula_view, name='alocar_aula'),
     path('unidadecurricular/detalhes/<int:pk>/', DetalhesUnidadeCurricularAPIView.as_view(), name='detalhes_unidade_curricular'),
-    path('cadastro-escola/', CadastroEscolaAPIView.as_view(), name='cadastro'),
-    path('capacidades-fundamentos/', CapacidadesFundamentosAPIView.as_view(), name='capacidade')
+    path('cadastro-escola/', CadastroEscolaAPIView.as_view(), name='cadastro')
 ]
