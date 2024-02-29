@@ -149,3 +149,39 @@
 2024-02-29 12:58:57.639 [info] > ./venv/bin/python ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/normalizeSelection.py
 2024-02-29 12:58:57.725 [info] Selected file contains invalid Python or Deprecated Python 2 code
 2024-02-29 13:04:12.592 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 13:09:08.003 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 13:11:05.203 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py
+2024-02-29 13:19:22.845 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/serializers.py
+2024-02-29 13:55:17.196 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 13:56:38.366 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/admin.py
+2024-02-29 13:58:51.522 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/urls.py
+2024-02-29 14:01:46.901 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/serializers.py
+2024-02-29 14:07:45.632 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-02-29 14:10:03.394 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/urls.py
+2024-02-29 14:32:07.968 [error] Custom .env is likely not pointing to a valid file [EntryIsADirectory (FileSystemError): Error: EISDIR: illegal operation on a directory, read
+	at E.e (/snap/code/152/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:149:6267)
+	at Object.readFile (/snap/code/152/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:149:4464)
+	at async b.readText (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:192205)
+	at async f.parseFile (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:318368)
+	at async v._getEnvironmentVariables (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:323051)
+	at async v.getEnvironmentVariables (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:322218)
+	at async u.create (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:213330)
+	at async b.normalizeLines (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:722419)
+	at async b.executeSelection (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:716238)
+	at async b.executeSelectionInTerminal (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:715827)
+	at async /root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:714254
+	at async s.h (/snap/code/152/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:150:175235)] {
+  code: 'FileIsADirectory'
+}
+2024-02-29 14:32:07.980 [info] > ./venv/bin/python ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/normalizeSelection.py
+2024-02-29 14:32:08.061 [info] Selected file contains invalid Python or Deprecated Python 2 code
+2024-02-29 14:34:27.670 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 14:35:05.147 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/admin.py
+2024-02-29 14:37:07.126 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/serializers.py
+2024-02-29 14:45:48.052 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-02-29 14:47:32.981 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/urls.py
+2024-02-29 15:54:59.227 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 16:01:06.053 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-02-29 16:03:03.801 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/serializers.py
+2024-02-29 16:03:32.151 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 16:04:15.723 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py

@@ -1,28 +1,7 @@
 from rest_framework import serializers
-from .models import (CapacidadesFundamentos, CadastroEscola, DiaLetivo, Infraestrutura,AulaInfraestrutura, CalendarioAula,
+from .models import (DiaLetivo, Infraestrutura,AulaInfraestrutura, CalendarioAula,
                      Aula, Evento, CalendarioAcademico, CursoUnidadeCurricularProfessor,
                      Pessoa, Curso, UnidadeCurricular, Areatecnologica,  HoratrabProf)
-
-class EventoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Evento
-        fields = ['id', 'data_evento', 'descricao']
-
-class CadastroEscolaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CadastroEscola
-        fields = ['id', 'descricao', 'unidade']
-
-class CapacidadesFundamentosSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CapacidadesFundamentos
-        fields = ['id', 'descricao', 'tipo']
-
-class UnidadeCurricularSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UnidadeCurricular
-        fields = ['id','descricao','carga_horaria', 'capacidadeFundamentos','cor']
-
 
 class DiaLetivoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -39,6 +18,11 @@ class CursoSerializer(serializers.ModelSerializer):
         model = Curso
         fields = '__all__'
 
+class UnidadeCurricularSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = UnidadeCurricular
+        fields = ['nome','id', 'horas_sala_aula','horas_laboratorio','horas_oficina','nome','carga_horaria', 'curso']
 
 class HoratrabProfSerializer(serializers.ModelSerializer):
     class Meta:
@@ -80,6 +64,12 @@ class CalendarioAcademicoSerializer(serializers.ModelSerializer):
         model = CalendarioAcademico
         fields = '__all__'
 
+
+
+class EventoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Evento
+        fields = ['id', 'data_evento', 'descricao']
 
 
 class AulaInfraestruturaSerializer(serializers.ModelSerializer):

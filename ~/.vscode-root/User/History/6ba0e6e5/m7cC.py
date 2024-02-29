@@ -60,7 +60,7 @@ class UnidadeCurricular(models.Model):
     descricao = models.CharField(max_length=100)
     carga_horaria = models.IntegerField(blank=True, null=True)
     capacidadeFundamentos = models.ForeignKey(CapacidadesFundamentos, on_delete=models.CASCADE, blank=True, null=True)
-    cor = models.CharField(max_length=10, blank=True)
+    cor = models.CharField(max_length=10)
     
     class Meta:
         ordering = ['descricao']

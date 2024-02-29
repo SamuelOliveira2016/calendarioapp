@@ -79,6 +79,17 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/servidor/calendarioapp/webpages/models.py",
                                         "path": "/home/servidor/calendarioapp/webpages/models.py",
                                         "scheme": "file"
@@ -498,8 +509,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Painel",
-                                    "checked": true
+                                    "label": "&&Painel"
                                 },
                                 {
                                     "id": "toggle.toggleCustomTitleBar",

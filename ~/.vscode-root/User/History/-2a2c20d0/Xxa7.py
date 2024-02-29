@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import (CapacidadesFundamentos,AulaInfraestrutura, Pessoa,  HoratrabProf, Areatecnologica, Capacidades,
+from .models import (AulaInfraestrutura, Pessoa,  HoratrabProf, Areatecnologica, Capacidades,
                      UnidadeCurricular, Infraestrutura, Curso, CursoUnidadeCurricularProfessor,
                      CalendarioAcademico, DiaLetivo, Evento, Aula, CalendarioAula, CadastroEscola)
 
@@ -19,4 +19,3 @@ admin.site.register(CalendarioAula)
 admin.site.register(AulaInfraestrutura)
 admin.site.register(Capacidades)
 admin.site.register(CadastroEscola)
-admin.site.register(CapacidadesFundamentos)
