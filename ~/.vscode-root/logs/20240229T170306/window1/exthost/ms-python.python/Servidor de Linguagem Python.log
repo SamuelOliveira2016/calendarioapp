@@ -1,0 +1,92 @@
+2024-02-29 17:03:12.159 [info] (Client) Pylance async client (2024.2.2) started with python extension (2024.0.1)
+2024-02-29 17:03:13.394 [info] [Info  - 17:03:13] (3942560) Pylance language server 2024.2.2 (pyright version 1.1.348, commit cfb1de0c) starting
+2024-02-29 17:03:13.397 [info] [Info  - 17:03:13] (3942560) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-29 17:03:13.397 [info] [Info  - 17:03:13] (3942560) Starting service instance "calendarioapp"
+2024-02-29 17:03:13.461 [info] [Info  - 17:03:13] (3942560) Setting pythonPath for service "calendarioapp": "/home/servidor/calendarioapp/venv/bin/python"
+2024-02-29 17:03:13.461 [info] [Info  - 17:03:13] (3942560) Setting environmentName for service "calendarioapp": "3.10.12 (venv venv)"
+2024-02-29 17:03:13.497 [info] [Info  - 17:03:13] (3942560) Assuming Python version 3.10
+2024-02-29 17:03:13.593 [info] [Info  - 17:03:13] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-02-29 17:03:13.618 [info] [Info  - 17:03:13] (3942560) Found 57 source files
+2024-02-29 17:03:14.259 [info] [Info  - 17:03:14] (3942560) Background analysis(1) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist
+2024-02-29 17:03:14.263 [info] [Info  - 17:03:14] (3942560) Background analysis(1) started
+2024-02-29 17:03:14.520 [info] [Info  - 17:03:14] (3942560) Indexer background runner(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist (index)
+2024-02-29 17:03:14.521 [info] [Info  - 17:03:14] (3942560) Indexing(2) started
+2024-02-29 17:03:15.461 [info] [Info  - 17:03:15] (3942560) scanned(2) 59 files over 1 exec env
+2024-02-29 17:03:16.699 [info] [Info  - 17:03:16] (3942560) indexed(2) 44 files over 1 exec env
+2024-02-29 17:03:16.841 [info] [Info  - 17:03:16] (3942560) Indexing finished(2).
+2024-02-29 17:04:02.501 [info] [Info  - 17:04:02] (3942560) Setting pythonPath for service "calendarioapp": "/home/servidor/calendarioapp/venv/bin/python"
+2024-02-29 17:04:02.501 [info] [Info  - 17:04:02] (3942560) Setting environmentName for service "calendarioapp": "3.10.12 (venv venv)"
+2024-02-29 17:04:02.541 [info] [Info  - 17:04:02] (3942560) Assuming Python version 3.10
+2024-02-29 17:04:02.611 [info] [Info  - 17:04:02] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-02-29 17:04:02.630 [info] [Info  - 17:04:02] (3942560) Found 57 source files
+2024-02-29 17:04:03.466 [info] [Info  - 17:04:03] (3942560) Indexer background runner(3) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2/dist (index)
+2024-02-29 17:04:03.466 [info] [Info  - 17:04:03] (3942560) Indexing(3) started
+2024-02-29 17:04:04.099 [info] [Info  - 17:04:04] (3942560) scanned(3) 59 files over 1 exec env
+2024-02-29 17:04:05.111 [info] [Info  - 17:04:05] (3942560) indexed(3) 44 files over 1 exec env
+2024-02-29 17:04:05.177 [info] [Info  - 17:04:05] (3942560) Indexing finished(3).
+2024-02-29 17:09:41.718 [info] [Info  - 17:09:41] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-02-29 17:09:41.768 [info] [Info  - 17:09:41] (3942560) Found 58 source files
+2024-03-01 13:02:55.341 [info] [Info  - 13:02:55] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 13:02:55.382 [info] [Info  - 13:02:55] (3942560) Found 59 source files
+2024-03-01 13:22:43.937 [info] [Info  - 13:22:43] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 13:22:43.956 [info] [Info  - 13:22:43] (3942560) Found 60 source files
+2024-03-01 13:24:37.148 [info] [Info  - 13:24:37] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 13:24:37.197 [info] [Info  - 13:24:37] (3942560) Found 61 source files
+2024-03-01 14:02:54.470 [info] [Info  - 14:02:54] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:02:54.498 [info] [Info  - 14:02:54] (3942560) Found 62 source files
+2024-03-01 14:09:05.422 [info] [Info  - 14:09:05] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:09:05.460 [info] [Info  - 14:09:05] (3942560) Found 63 source files
+2024-03-01 14:14:24.125 [info] [Info  - 14:14:24] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:14:24.174 [info] [Info  - 14:14:24] (3942560) Found 64 source files
+2024-03-01 14:30:02.603 [info] [Info  - 14:30:02] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:30:02.633 [info] [Info  - 14:30:02] (3942560) Found 65 source files
+2024-03-01 14:33:07.555 [info] [Info  - 14:33:07] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:33:07.576 [info] [Info  - 14:33:07] (3942560) Found 66 source files
+2024-03-01 14:41:30.538 [info] [Info  - 14:41:30] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:41:30.563 [info] [Info  - 14:41:30] (3942560) Found 65 source files
+2024-03-01 14:42:10.375 [info] [Info  - 14:42:10] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:42:10.410 [info] [Info  - 14:42:10] (3942560) Found 65 source files
+2024-03-01 14:42:37.229 [info] [Info  - 14:42:37] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:42:37.250 [info] [Info  - 14:42:37] (3942560) Found 66 source files
+2024-03-01 14:43:37.173 [info] [Info  - 14:43:37] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:43:37.206 [info] [Info  - 14:43:37] (3942560) Found 66 source files
+2024-03-01 14:45:15.909 [info] [Info  - 14:45:15] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:45:15.932 [info] [Info  - 14:45:15] (3942560) Found 66 source files
+2024-03-01 14:46:02.873 [info] [Info  - 14:46:02] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:46:02.903 [info] [Info  - 14:46:02] (3942560) Found 65 source files
+2024-03-01 14:47:05.009 [info] [Info  - 14:47:05] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:47:05.035 [info] [Info  - 14:47:05] (3942560) Found 65 source files
+2024-03-01 14:50:14.822 [info] [Info  - 14:50:14] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:50:14.848 [info] [Info  - 14:50:14] (3942560) Found 64 source files
+2024-03-01 14:50:32.565 [info] [Info  - 14:50:32] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:50:32.600 [info] [Info  - 14:50:32] (3942560) Found 63 source files
+2024-03-01 14:50:48.760 [info] [Info  - 14:50:48] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:50:48.784 [info] [Info  - 14:50:48] (3942560) Found 62 source files
+2024-03-01 14:51:03.540 [info] [Info  - 14:51:03] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:51:03.568 [info] [Info  - 14:51:03] (3942560) Found 61 source files
+2024-03-01 14:51:19.599 [info] [Info  - 14:51:19] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:51:19.619 [info] [Info  - 14:51:19] (3942560) Found 62 source files
+2024-03-01 14:59:00.706 [info] [Info  - 14:59:00] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 14:59:00.729 [info] [Info  - 14:59:00] (3942560) Found 63 source files
+2024-03-01 15:05:22.880 [info] [Info  - 15:05:22] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 15:05:22.907 [info] [Info  - 15:05:22] (3942560) Found 63 source files
+2024-03-01 15:05:31.119 [info] [Info  - 15:05:31] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 15:05:31.140 [info] [Info  - 15:05:31] (3942560) Found 62 source files
+2024-03-01 15:05:53.994 [info] [Info  - 15:05:53] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 15:05:54.013 [info] [Info  - 15:05:54] (3942560) Found 62 source files
+2024-03-01 16:05:04.078 [info] [Info  - 16:05:04] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 16:05:04.113 [info] [Info  - 16:05:04] (3942560) Found 63 source files
+2024-03-01 16:06:48.820 [info] [Info  - 16:06:48] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 16:06:48.865 [info] [Info  - 16:06:48] (3942560) Found 64 source files
+2024-03-01 16:40:39.736 [info] [Info  - 16:40:39] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 16:40:39.777 [info] [Info  - 16:40:39] (3942560) Found 64 source files
+2024-03-01 16:41:07.207 [info] [Info  - 16:41:07] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 16:41:07.230 [info] [Info  - 16:41:07] (3942560) Found 63 source files
+2024-03-01 16:45:05.894 [info] [Info  - 16:45:05] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 16:45:05.917 [info] [Info  - 16:45:05] (3942560) Found 63 source files
+2024-03-01 16:46:48.880 [info] [Info  - 16:46:48] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 16:46:48.901 [info] [Info  - 16:46:48] (3942560) Found 64 source files
+2024-03-01 17:52:01.665 [info] [Info  - 17:52:01] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 17:52:01.684 [info] [Info  - 17:52:01] (3942560) Found 65 source files
+2024-03-01 17:57:05.988 [info] [Info  - 17:57:05] (3942560) Auto-excluding /home/servidor/calendarioapp/venv
+2024-03-01 17:57:06.009 [info] [Info  - 17:57:06] (3942560) Found 66 source files

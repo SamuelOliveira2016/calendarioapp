@@ -1,0 +1,55 @@
+2024-02-29 17:03:06.626 [info] update#setState idle
+2024-02-29 17:03:08.583 [error] vscode-file: Refused to load resource /snap/code/152/usr/share/code/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/snap/code/152/usr/share/code/resources/app/extensions/theme-seti/icons/seti.woff)
+2024-02-29 17:03:36.621 [info] update#setState checking for updates
+2024-02-29 17:03:36.623 [info] update#setState idle
+2024-02-29 18:03:36.622 [info] update#setState checking for updates
+2024-02-29 18:03:36.625 [info] update#setState idle
+2024-02-29 19:03:36.623 [info] update#setState checking for updates
+2024-02-29 19:03:36.625 [info] update#setState idle
+2024-02-29 20:03:36.624 [info] update#setState checking for updates
+2024-02-29 20:03:36.627 [info] update#setState idle
+2024-02-29 21:03:36.626 [info] update#setState checking for updates
+2024-02-29 21:03:36.628 [info] update#setState idle
+2024-02-29 22:03:36.628 [info] update#setState checking for updates
+2024-02-29 22:03:36.631 [info] update#setState idle
+2024-02-29 23:03:36.634 [info] update#setState checking for updates
+2024-02-29 23:03:36.636 [info] update#setState idle
+2024-03-01 00:03:36.639 [info] update#setState checking for updates
+2024-03-01 00:03:36.641 [info] update#setState idle
+2024-03-01 01:03:36.644 [info] update#setState checking for updates
+2024-03-01 01:03:36.645 [info] update#setState idle
+2024-03-01 02:03:36.647 [info] update#setState checking for updates
+2024-03-01 02:03:36.649 [info] update#setState idle
+2024-03-01 03:03:36.649 [info] update#setState checking for updates
+2024-03-01 03:03:36.651 [info] update#setState idle
+2024-03-01 04:03:36.653 [info] update#setState checking for updates
+2024-03-01 04:03:36.655 [info] update#setState idle
+2024-03-01 05:03:36.657 [info] update#setState checking for updates
+2024-03-01 05:03:36.658 [info] update#setState idle
+2024-03-01 06:03:36.660 [info] update#setState checking for updates
+2024-03-01 06:03:36.662 [info] update#setState idle
+2024-03-01 07:03:36.663 [info] update#setState checking for updates
+2024-03-01 07:03:36.665 [info] update#setState idle
+2024-03-01 08:03:36.665 [info] update#setState checking for updates
+2024-03-01 08:03:36.667 [info] update#setState idle
+2024-03-01 09:03:36.668 [info] update#setState checking for updates
+2024-03-01 09:03:36.670 [info] update#setState idle
+2024-03-01 10:03:36.670 [info] update#setState checking for updates
+2024-03-01 10:03:36.671 [info] update#setState idle
+2024-03-01 11:03:36.671 [info] update#setState checking for updates
+2024-03-01 11:03:36.673 [info] update#setState idle
+2024-03-01 12:03:36.672 [info] update#setState checking for updates
+2024-03-01 12:03:36.674 [info] update#setState idle
+2024-03-01 13:03:36.674 [info] update#setState checking for updates
+2024-03-01 13:03:36.676 [info] update#setState idle
+2024-03-01 14:03:36.675 [info] update#setState checking for updates
+2024-03-01 14:03:36.678 [info] update#setState idle
+2024-03-01 15:03:36.675 [info] update#setState checking for updates
+2024-03-01 15:03:36.677 [info] update#setState idle
+2024-03-01 16:03:36.678 [info] update#setState checking for updates
+2024-03-01 16:03:36.679 [info] update#setState idle
+2024-03-01 17:03:36.680 [info] update#setState checking for updates
+2024-03-01 17:03:36.681 [info] update#setState idle
+2024-03-01 18:01:59.721 [info] Extension host with pid 3941927 exited with code: 0, signal: unknown.
+2024-03-01 18:01:59.732 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2024-03-01 18:01:59.733 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 3941938]: crashed with code 15 and reason 'killed'

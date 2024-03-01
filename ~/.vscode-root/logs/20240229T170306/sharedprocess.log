@@ -1,0 +1,58 @@
+2024-02-29 17:03:10.686 [error] [uncaught exception in sharedProcess]: Event not found: onDidChange: CodeExpectedError: Event not found: onDidChange
+    at Object.listen (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:45:4960)
+    at E.t (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:44:251)
+    at E.q (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:4371)
+    at y.value (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:3602)
+    at d.y (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1902)
+    at d.z (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1972)
+    at d.fire (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:2188)
+    at MessagePortMain.fe (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:36:30382)
+    at MessagePortMain.emit (node:events:514:28)
+    at Object.emit (node:electron/js2c/utility_init:2:2285)
+2024-02-29 17:03:13.583 [info] Getting Manifest... ms-ceintl.vscode-language-pack-pt-br
+2024-02-29 17:03:13.585 [info] Getting Manifest... ms-python.debugpy
+2024-02-29 17:03:13.586 [info] Getting Manifest... ms-python.python
+2024-02-29 17:03:13.721 [info] Installing extension: ms-python.debugpy
+2024-02-29 17:03:13.722 [info] Installing extension: ms-python.python
+2024-02-29 17:03:13.724 [info] Installing extension: ms-ceintl.vscode-language-pack-pt-br
+2024-02-29 17:03:17.970 [info] Extension signature is verified: ms-ceintl.vscode-language-pack-pt-br
+2024-02-29 17:03:18.096 [info] Extracted extension to file:///root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.87.2024022809: ms-ceintl.vscode-language-pack-pt-br
+2024-02-29 17:03:18.110 [info] Renamed to /root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.87.2024022809
+2024-02-29 17:03:18.113 [info] Extracting extension completed. ms-ceintl.vscode-language-pack-pt-br
+2024-02-29 17:03:18.145 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-pt-br
+2024-02-29 17:03:18.165 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-02-29 17:03:18.191 [info] Marked extension as uninstalled ms-ceintl.vscode-language-pack-pt-br-1.85.2024021409
+2024-02-29 17:03:18.260 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-pt-br
+2024-02-29 17:03:18.999 [info] Extension signature is verified: ms-python.debugpy
+2024-02-29 17:03:19.372 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.debugpy-2024.2.0-linux-x64: ms-python.debugpy
+2024-02-29 17:03:19.380 [info] Renamed to /root/.vscode/extensions/ms-python.debugpy-2024.2.0-linux-x64
+2024-02-29 17:03:19.385 [info] Extracting extension completed. ms-python.debugpy
+2024-02-29 17:03:19.404 [info] Extension installed successfully: ms-python.debugpy
+2024-02-29 17:03:19.408 [info] Marked extension as uninstalled ms-python.debugpy-2024.0.0-linux-x64
+2024-02-29 17:03:19.474 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-02-29 17:03:21.360 [info] Extension signature is verified: ms-python.python
+2024-02-29 17:03:23.280 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.python-2024.2.1: ms-python.python
+2024-02-29 17:03:23.291 [info] Renamed to /root/.vscode/extensions/ms-python.python-2024.2.1
+2024-02-29 17:03:23.295 [info] Extracting extension completed. ms-python.python
+2024-02-29 17:03:23.308 [info] Extension installed successfully: ms-python.python
+2024-02-29 17:03:23.312 [info] Marked extension as uninstalled ms-python.python-2024.0.1
+2024-02-29 17:03:23.381 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/153/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-02-29 17:03:49.250 [error] [uncaught exception in sharedProcess]: Ocorreu um erro no sistema (ENOENT: no such file or directory, scandir '/home/servidor/calendarioapp/~/.vscode-root/clp/3cb7fcb06a4f193cb32814d08a616b87.pt-br'): Error: ENOENT: no such file or directory, scandir '/home/servidor/calendarioapp/~/.vscode-root/clp/3cb7fcb06a4f193cb32814d08a616b87.pt-br'

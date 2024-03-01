@@ -79,6 +79,61 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0029_horaaulacargahoraria.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0029_horaaulacargahoraria.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0029_horaaulacargahoraria.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0032_alter_horaaulacargahoraria_periodo.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0032_alter_horaaulacargahoraria_periodo.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0032_alter_horaaulacargahoraria_periodo.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0033_alter_horaaulacargahoraria_periodo.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0033_alter_horaaulacargahoraria_periodo.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0033_alter_horaaulacargahoraria_periodo.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0030_horaaulacargahoraria_periodo.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0030_horaaulacargahoraria_periodo.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0030_horaaulacargahoraria_periodo.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py",
                                         "path": "/home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py",
                                         "scheme": "file"
