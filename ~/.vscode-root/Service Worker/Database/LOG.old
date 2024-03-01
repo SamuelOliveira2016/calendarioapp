@@ -1,2 +1,3 @@
-2024/02/22-12:48:07.509 9ea35 Creating DB /home/servidor/calendarioapp/~/.vscode-root/Service Worker/Database since it was missing.
-2024/02/22-12:48:07.522 9ea35 Reusing MANIFEST /home/servidor/calendarioapp/~/.vscode-root/Service Worker/Database/MANIFEST-000001
+2024/02/22-12:48:47.970 9ecaf Reusing MANIFEST /home/servidor/calendarioapp/~/.vscode-root/Service Worker/Database/MANIFEST-000001
+2024/02/22-12:48:47.970 9ecaf Recovering log #3
+2024/02/22-12:48:47.970 9ecaf Reusing old log /home/servidor/calendarioapp/~/.vscode-root/Service Worker/Database/000003.log 

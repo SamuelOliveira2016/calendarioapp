@@ -1,0 +1,80 @@
+2024-02-29 17:03:10.450 [info] O experimento 'pythonRecommendTensorboardExt' está ativo
+2024-02-29 17:03:10.450 [info] O experimento 'pythonREPLSmartSend' está ativo
+2024-02-29 17:03:10.450 [info] O experimento 'pythonSurveyNotificationcf' está ativo
+2024-02-29 17:03:10.450 [info] O experimento 'pythonTerminalEnvVarActivation' está ativo
+2024-02-29 17:03:10.450 [info] O experimento 'pythonTestAdapter' está ativo
+2024-02-29 17:03:10.570 [info] Default formatter is set to null for workspace /home/servidor/calendarioapp
+2024-02-29 17:03:10.600 [info] Test server listening.
+2024-02-29 17:03:10.654 [info] Caminho do interpretador Python: ./venv/bin/python
+2024-02-29 17:03:11.340 [error] Custom .env is likely not pointing to a valid file [EntryIsADirectory (FileSystemError): Error: EISDIR: illegal operation on a directory, read
+	at k.e (/snap/code/153/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:149:6266)
+	at Object.readFile (/snap/code/153/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:149:4463)
+	at async b.readText (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:192205)
+	at async f.parseFile (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:318368)
+	at async v._getEnvironmentVariables (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:323051)
+	at async v.getEnvironmentVariables (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:322218)
+	at async u.create (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:213330)
+	at async k.getActivatedEnvironmentVariablesImpl (/root/.vscode/extensions/ms-python.python-2024.0.1/out/client/extension.js:2:394477)] {
+  code: 'FileIsADirectory'
+}
+2024-02-29 17:03:11.460 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/printEnvVariables.py
+2024-02-29 17:03:11.461 [info] shell: bash
+2024-02-29 17:03:11.508 [info] > /bin/python3 ~/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/printEnvVariables.py
+2024-02-29 17:03:11.508 [info] shell: bash
+2024-02-29 17:03:11.542 [info] Send text to terminal: /bin/python3 /root/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/printEnvVariablesToFile.py /root/.vscode/extensions/ms-python.python-2024.0.1/pythonFiles/deactivate/bash/envVars.txt
+2024-02-29 17:03:13.427 [info] Iniciando servidor de idiomas Pylance.
+2024-02-29 17:09:33.260 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 17:16:32.782 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 17:24:37.044 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-02-29 17:38:37.935 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:00:22.292 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:00:46.383 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:02:50.570 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:18:07.619 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:22:21.964 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/urls.py
+2024-03-01 13:22:24.643 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-03-01 13:22:27.239 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/serializers.py
+2024-03-01 13:22:29.843 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/admin.py
+2024-03-01 13:24:10.024 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:24:32.094 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:25:59.953 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:28:47.472 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-03-01 13:29:00.336 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-03-01 13:31:30.389 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-03-01 13:55:22.756 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 13:59:20.275 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/serializers.py
+2024-03-01 14:00:08.818 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-03-01 14:02:10.705 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/urls.py
+2024-03-01 14:02:44.280 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/admin.py
+2024-03-01 14:06:07.922 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:08:58.096 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:10:37.791 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0030_horaaulacargahoraria_periodo.py
+2024-03-01 14:13:58.727 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:28:58.163 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:33:01.448 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:35:21.488 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:36:22.266 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:36:49.825 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:38:07.460 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0033_alter_horaaulacargahoraria_periodo.py
+2024-03-01 14:43:21.549 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0032_alter_horaaulacargahoraria_periodo.py
+2024-03-01 14:46:40.350 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 14:58:52.847 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0029_horaaulacargahoraria.py
+2024-03-01 15:11:20.443 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/views.py
+2024-03-01 16:03:47.949 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 16:04:33.340 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 16:04:56.698 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 16:06:44.148 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py
+2024-03-01 16:07:00.197 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py
+2024-03-01 16:07:19.565 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py
+2024-03-01 16:08:03.551 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py
+2024-03-01 16:08:27.603 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py
+2024-03-01 16:24:39.236 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py
+2024-03-01 16:46:44.793 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 16:47:32.117 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/migrations/0030_pessoa_cor_pessoa_periodo_alter_pessoa_cargo_and_more.py
+2024-03-01 17:40:04.070 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 17:51:20.653 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 17:51:58.170 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 17:55:29.928 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 17:56:05.433 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 17:56:42.537 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/models.py
+2024-03-01 17:57:02.024 [info] Discover tests for workspace name: calendarioapp - uri: /home/servidor/calendarioapp/webpages/serializers.py
