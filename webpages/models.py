@@ -171,6 +171,8 @@ class Pessoa(models.Model):
 
 
 class Areatecnologica(models.Model):
+    '''Modelo para relacionar as áreas técnológicas de estudos das Escolas,
+    apenas a descrição é necessária'''
     descricao = models.CharField(max_length=255)
 
     class Meta:
@@ -180,6 +182,8 @@ class Areatecnologica(models.Model):
         return self.descricao
 
 class Infraestrutura(models.Model):
+    '''Modelo para selecionar infraestrutura são necessários os campos,
+    nome, capacidade, cor e tipo (laboratório, sala de aula e oficina)'''
     TIPO_AMBIENTE_CHOICES = [
         (1, 'Laboratório'),
         (2, 'Oficina'),
@@ -198,33 +202,39 @@ class Infraestrutura(models.Model):
         return f"{self.nome} ({self.get_tipo_display()}) - Capacidade: {self.capacidade}"
 
 class Curso(models.Model):
-    APREND_IND = 'Aprendizagem industrial'
-    TECNICO = 'Técnico'
-    REGULAR_CHOICES = [
-        (APREND_IND,'Aprendizagem industrial'),
-        (TECNICO,'Técnico')
-    ]
-    INCIACAO = 'Iniciação'
-    QUALIF = 'Qualificação'
-    APERFEI = 'Aperfeiçoamento'
-    ESPECIAL = 'Especialização'
-    LIVRES_CHOICE = [
-        (INCIACAO,'Iniciação'),
-        (QUALIF,'Qualificação'),
-        (APERFEI,'Aperfeiçoamento'),
-        (ESPECIAL,'Especialização')
-    ]
-    curso_regular = models.CharField(max_length=30, choices=REGULAR_CHOICES, default = APREND_IND)
-    curso_livre = models.CharField(max_length=30, choices=LIVRES_CHOICE, default = ESPECIAL)
-    nome = models.CharField(max_length=100)
-    quantidade_horas_total = models.IntegerField(blank=True, null=True)
+    '''Criação de cursos/turma para popular o calendario, os dados necessários são,
+     descrição, datas de inicio e fim, cor e duas chaves estrangeiras NN uma para
+     período e outra para área tecnológica'''
+    #APREND_IND = 'Aprendizagem industrial'
+    #TECNICO = 'Técnico'
+    #REGULAR_CHOICES = [
+    #    (APREND_IND,'Aprendizagem industrial'),
+    #    (TECNICO,'Técnico')
+    #]
+    #INCIACAO = 'Iniciação'
+    #QUALIF = 'Qualificação'
+    #APERFEI = 'Aperfeiçoamento'
+    #ESPECIAL = 'Especialização'
+    #LIVRES_CHOICE = [
+    #    (INCIACAO,'Iniciação'),
+    #    (QUALIF,'Qualificação'),
+    #    (APERFEI,'Aperfeiçoamento'),
+    #    (ESPECIAL,'Especialização')
+    #]
+    #curso_regular = models.CharField(max_length=30, choices=REGULAR_CHOICES, default = APREND_IND)
+    #curso_livre = models.CharField(max_length=30, choices=LIVRES_CHOICE, default = ESPECIAL)
+    descricao = models.CharField(max_length=255)
+    #quantidade_horas_total = models.IntegerField(blank=True, null=True)
+    dataInicio = models.DateField(default='2024-02-02')
+    dataFim = models.DateField(default='2024-02-02')
     areatecnologica = models.ManyToManyField(Areatecnologica, blank=True)
-    
+    periodo = models.ManyToManyField(Periodo, default='')
+    cor = models.CharField(max_length=10)
     class Meta:
-        ordering = ['nome']
+        ordering = ['descicao']
 
     def __str__(self):
-        return self.nome
+        return self.descricao
 
 
 
@@ -236,63 +246,65 @@ class Capacidades(models.Model):
     def __str__(self):
         return self.unidadeCurricular
 
-class CursoUnidadeCurricularProfessor(models.Model):
-    curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
-    unidadeCurricular = models.ForeignKey(UnidadeCurricular, on_delete=models.CASCADE)
-    pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE, default = 1)
+#class CursoUnidadeCurricularProfessor(models.Model):
+#    curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
+#    unidadeCurricular = models.ForeignKey(UnidadeCurricular, on_delete=models.CASCADE)
+#    pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE, default = 1)
 
-class CalendarioAcademico(models.Model):
-    nome = models.CharField(max_length=100, blank=True, null=True)  # Novo campo adicionado
-    ano_letivo = models.IntegerField()
-    semestre = models.IntegerField()
-    inicio = models.DateField()
-    termino = models.DateField()
+#class CalendarioAcademico(models.Model):
+#    nome = models.CharField(max_length=100, blank=True, null=True)  # Novo campo adicionado
+#    ano_letivo = models.IntegerField()
+#    semestre = models.IntegerField()
+#    inicio = models.DateField()
+#    termino = models.DateField()
+#
+#    def save(self, *args, **kwargs):
+#        super().save(*args, **kwargs)  # Chama o save original primeiro
+#        self.create_or_update_dias_letivos()
+#
+#    def create_or_update_dias_letivos(self):
+#        # Converta as datas de início e término para datetime.date, se ainda não forem
+#        start_date = self.inicio
+#        end_date = self.termino
+#        holidays = fetch_holidays(start_date.isoformat(), end_date.isoformat())
+#
+#        current_date = start_date
+#        while current_date <= end_date:
+#            # Verifica se o dia é um feriado ou fim de semana
+#            e_dia_de_aula = not (current_date.weekday() in [5, 6] or current_date.isoformat() in holidays)
+#
+#            # Cria ou atualiza o DiaLetivo
+#            DiaLetivo.objects.update_or_create(
+#                data=current_date,
+#                calendario_academico=self,
+#                defaults={'e_dia_de_aula': e_dia_de_aula}
+#            )
+#
+#            # Incrementa a data atual
+#            current_date += timedelta(days=1)
+#
+#    def save(self, *args, **kwargs):
+#        super().save(*args, **kwargs)
+#        self.create_or_update_dias_letivos()
 
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)  # Chama o save original primeiro
-        self.create_or_update_dias_letivos()
-
-    def create_or_update_dias_letivos(self):
-        # Converta as datas de início e término para datetime.date, se ainda não forem
-        start_date = self.inicio
-        end_date = self.termino
-        holidays = fetch_holidays(start_date.isoformat(), end_date.isoformat())
-
-        current_date = start_date
-        while current_date <= end_date:
-            # Verifica se o dia é um feriado ou fim de semana
-            e_dia_de_aula = not (current_date.weekday() in [5, 6] or current_date.isoformat() in holidays)
-
-            # Cria ou atualiza o DiaLetivo
-            DiaLetivo.objects.update_or_create(
-                data=current_date,
-                calendario_academico=self,
-                defaults={'e_dia_de_aula': e_dia_de_aula}
-            )
-
-            # Incrementa a data atual
-            current_date += timedelta(days=1)
-
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
-        self.create_or_update_dias_letivos()
-
-class DiaLetivo(models.Model):
-    data = models.DateField()
-    calendario_academico = models.ForeignKey(CalendarioAcademico, on_delete=models.CASCADE)
-    e_dia_de_aula = models.BooleanField(default=True)
-    observacao = models.TextField(blank=True, null=True)
-
-    def __str__(self):
-        return f"{self.data} - {'Aula' if self.e_dia_de_aula else 'Não-Aula'}"
+#class DiaLetivo(models.Model):
+#    data = models.DateField()
+#    calendario_academico = models.ForeignKey(CalendarioAcademico, on_delete=models.CASCADE)
+#    e_dia_de_aula = models.BooleanField(default=True)
+#    observacao = models.TextField(blank=True, null=True)
+#
+#    def __str__(self):
+#        return f"{self.data} - {'Aula' if self.e_dia_de_aula else 'Não-Aula'}"
 
 
 
 class Aula(models.Model):
-    curso_uc_professor = models.ForeignKey(CursoUnidadeCurricularProfessor, on_delete=models.CASCADE)
-
+    professor = models.ForeignKey(Pessoa, on_delete=models.CASCADE)
+    UnidadeCurricularF=models.ForeignKey(UnidadeCurricular, on_delete=models.CASCADE)
+    turma=models.ForeignKey(Curso,on_delete=models.CASCADE)
+    infraestrutura=models.ForeignKey(Infraestrutura,on_delete=models.CASCADE)
     def __str__(self):
-        uc_nome = self.curso_uc_professor.unidadeCurricular.nome
+        uc_nome = self.turma
         return f"Aula de {uc_nome}"
 
 class AulaInfraestrutura(models.Model):
@@ -303,39 +315,41 @@ class AulaInfraestrutura(models.Model):
     def __str__(self):
         return f"{self.aula} - {self.infraestrutura.nome} ({self.horas} horas)"
 
+class AulaProfessor(models.Model):
+    aula=models.ForeignKey(Aula,on_delete=models.CASCADE)
+    professor=models.ForeignKey(Pessoa,on_delete=models.CASCADE)
 
 
-
-class CalendarioAula(models.Model):
-    aula = models.ForeignKey(Aula, on_delete=models.CASCADE)
-    dia_letivo = models.ForeignKey(DiaLetivo, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return f"{self.aula} no dia {self.dia_letivo.data}"
-
-    def clean(self):
-        # Buscar aulas alocadas
-        aulas_alocadas = Aula.objects.filter(
-            curso_uc_professor__unidadeCurricular=self.aula.curso_uc_professor.unidadeCurricular
-        ).filter(
-            calendarioaula__isnull=False
-        )
-        # Verificação se a aula pode ser alocada neste dia letivo sem conflitos
-        if not is_aula_disponivel_no_dia_letivo(self.aula, self.dia_letivo):
-            raise ValidationError("Aula indisponível para este dia letivo.")
-
-        # Verificação da disponibilidade da infraestrutura no horário da aula
-        if not is_infraestrutura_disponivel(self.aula, self.aula.horario_inicio, self.aula.horario_fim):
-            raise ValidationError("Infraestrutura indisponível no horário da aula.")
-
-        # Verificação da disponibilidade do professor no horário da aula
-        if not is_professor_disponivel(self.aula, self.aula.horario_inicio, self.aula.horario_fim):
-            raise ValidationError("Professor não disponível no horário da aula.")
-
-        # Verificação da carga horária da unidade curricular
-        if not is_carga_horaria_respeitada(self.aula.curso_uc_professor.unidadeCurricular, self.aula, aulas_alocadas):
-            raise ValidationError("A carga horária para esta unidade curricular já foi atingida ou excedida.")
-
-    def save(self, *args, **kwargs):
-        self.clean()
-        super().save(*args, **kwargs)
+#class CalendarioAula(models.Model):
+#    aula = models.ForeignKey(Aula, on_delete=models.CASCADE)
+#    dia_letivo = models.ForeignKey(DiaLetivo, on_delete=models.CASCADE)
+#
+#    def __str__(self):
+#        return f"{self.aula} no dia {self.dia_letivo.data}"
+#
+#    def clean(self):
+#        # Buscar aulas alocadas
+#        aulas_alocadas = Aula.objects.filter(
+#            curso_uc_professor__unidadeCurricular=self.aula.curso_uc_professor.unidadeCurricular
+#        ).filter(
+#            calendarioaula__isnull=False
+#        )
+#        # Verificação se a aula pode ser alocada neste dia letivo sem conflitos
+#        if not is_aula_disponivel_no_dia_letivo(self.aula, self.dia_letivo):
+#            raise ValidationError("Aula indisponível para este dia letivo.")
+#
+#        # Verificação da disponibilidade da infraestrutura no horário da aula
+#        if not is_infraestrutura_disponivel(self.aula, self.aula.horario_inicio, self.aula.horario_fim):
+#            raise ValidationError("Infraestrutura indisponível no horário da aula.")
+#
+#        # Verificação da disponibilidade do professor no horário da aula
+#        if not is_professor_disponivel(self.aula, self.aula.horario_inicio, self.aula.horario_fim):
+#            raise ValidationError("Professor não disponível no horário da aula.")
+#
+#        # Verificação da carga horária da unidade curricular
+#        if not is_carga_horaria_respeitada(self.aula.curso_uc_professor.unidadeCurricular, self.aula, aulas_alocadas):
+#            raise ValidationError("A carga horária para esta unidade curricular já foi atingida ou excedida.")
+#
+#    def save(self, *args, **kwargs):
+#        self.clean()
+#        super().save(*args, **kwargs)
