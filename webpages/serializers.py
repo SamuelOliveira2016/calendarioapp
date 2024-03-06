@@ -113,4 +113,4 @@ class CalendarioAulaSerializer(serializers.ModelSerializer):
 class InfraestruturaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Infraestrutura
-        fields = '__all__'  # Inclui todos os campos do modelo
+        fields = '__all__'
