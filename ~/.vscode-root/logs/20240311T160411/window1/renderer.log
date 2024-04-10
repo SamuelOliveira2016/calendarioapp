@@ -1,0 +1,39 @@
+2024-03-11 16:04:13.645 [info] Started local extension host with pid 1318948.
+2024-03-11 16:04:17.057 [info] [perf] Render performance baseline is 91ms
+2024-03-15 16:25:32.645 [error] Cancelled: Canceled
+    at ie.B (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:781:28456)
+    at async ie.z (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:781:25333)
+    at async ie.getExtensions (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:781:22267)
+    at async Y.getExtensions (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2941:12529)
+    at async ve.Gc (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2877:24913)
+    at async ve.Pc (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2877:27577)
+    at async ve.mc (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2877:14515)
+    at async vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2877:12817
+2024-03-15 16:28:15.511 [error] Cancelled: Canceled
+    at ie.B (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:781:28456)
+    at async ie.z (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:781:25333)
+    at async ie.z (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:781:26277)
+    at async ne (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:781:24336)
+    at async ie.query (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:781:24557)
+    at async Y.queryGallery (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2941:12106)
+    at async pe.Cc (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2877:22903)
+    at async pe.mc (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2877:14515)
+    at async vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2877:12817
+2024-03-15 16:38:48.556 [info] Started local extension host with pid 2819158.
+2024-03-15 16:38:51.982 [info] [perf] Render performance baseline is 85ms
+2024-03-21 12:56:59.198 [error] Unable to read file '/home/servidor/calendarioapp/webpages/models.py' (Error: File not modified since): Error: Unable to read file '/home/servidor/calendarioapp/webpages/models.py' (Error: File not modified since)
+    at n.F (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:653:19875)
+    at n.D (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:653:19763)
+    at async d.M (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2423:42865)
+    at async d.readStream (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2423:42622)
+    at async T.Cb (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2412:13526)
+    at async T.resolve (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2412:11973)
+    at async vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2423:38734
+2024-03-21 13:04:01.809 [error] Unable to read file '/home/servidor/calendarioapp/webpages/triggerintervalo.sql' (Error: File not modified since): Error: Unable to read file '/home/servidor/calendarioapp/webpages/triggerintervalo.sql' (Error: File not modified since)
+    at n.F (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:653:19875)
+    at n.D (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:653:19763)
+    at async d.M (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2423:42865)
+    at async d.readStream (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2423:42622)
+    at async T.Cb (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2412:13526)
+    at async T.resolve (vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2412:11973)
+    at async vscode-file://vscode-app/snap/code/154/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2423:38734

@@ -1,0 +1,158 @@
+2024-03-11 16:04:14.471 [info] Deleted uninstalled extension from disk ms-ceintl.vscode-language-pack-pt-br /root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.85.2024021409
+2024-03-11 16:04:14.471 [info] Deleted uninstalled extension from disk ms-python.debugpy /root/.vscode/extensions/ms-python.debugpy-2024.0.0-linux-x64
+2024-03-11 16:04:14.472 [info] Deleted uninstalled extension from disk ms-python.python /root/.vscode/extensions/ms-python.python-2024.0.1
+2024-03-11 16:04:15.561 [error] [uncaught exception in sharedProcess]: Event not found: onDidChange: CodeExpectedError: Event not found: onDidChange
+    at Object.listen (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:45:4960)
+    at E.t (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:44:251)
+    at E.q (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:4371)
+    at y.value (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:3602)
+    at d.y (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1902)
+    at d.z (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1972)
+    at d.fire (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:2188)
+    at MessagePortMain.fe (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:36:30382)
+    at MessagePortMain.emit (node:events:514:28)
+    at Object.emit (node:electron/js2c/utility_init:2:2285)
+2024-03-11 16:04:19.002 [info] Getting Manifest... ms-ceintl.vscode-language-pack-pt-br
+2024-03-11 16:04:19.004 [info] Getting Manifest... ms-python.vscode-pylance
+2024-03-11 16:04:19.061 [info] Installing extension: ms-ceintl.vscode-language-pack-pt-br
+2024-03-11 16:04:19.082 [info] Installing extension: ms-python.vscode-pylance
+2024-03-11 16:04:20.630 [info] Getting Manifest... ms-python.python
+2024-03-11 16:04:20.934 [info] Extension signature is verified: ms-ceintl.vscode-language-pack-pt-br
+2024-03-11 16:04:21.019 [info] Extracted extension to file:///root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.87.2024030609: ms-ceintl.vscode-language-pack-pt-br
+2024-03-11 16:04:21.027 [info] Renamed to /root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.87.2024030609
+2024-03-11 16:04:21.029 [info] Extracting extension completed. ms-ceintl.vscode-language-pack-pt-br
+2024-03-11 16:04:21.040 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-pt-br
+2024-03-11 16:04:21.080 [info] Marked extension as uninstalled ms-ceintl.vscode-language-pack-pt-br-1.87.2024022809
+2024-03-11 16:04:21.125 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-11 16:04:21.131 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-pt-br
+2024-03-11 16:04:25.003 [info] Extension signature is verified: ms-python.vscode-pylance
+2024-03-11 16:04:28.653 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.2.3: ms-python.vscode-pylance
+2024-03-11 16:04:28.685 [info] Renamed to /root/.vscode/extensions/ms-python.vscode-pylance-2024.2.3
+2024-03-11 16:04:28.689 [info] Extracting extension completed. ms-python.vscode-pylance
+2024-03-11 16:04:28.704 [info] Extension installed successfully: ms-python.vscode-pylance
+2024-03-11 16:04:28.710 [info] Marked extension as uninstalled ms-python.vscode-pylance-2024.2.2
+2024-03-11 16:04:28.778 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-11 16:04:54.074 [error] [uncaught exception in sharedProcess]: Ocorreu um erro no sistema (ENOENT: no such file or directory, scandir '/home/servidor/calendarioapp/~/.vscode-root/clp/105f75b461fcbff7fe68a0e9c633970c.pt-br'): Error: ENOENT: no such file or directory, scandir '/home/servidor/calendarioapp/~/.vscode-root/clp/105f75b461fcbff7fe68a0e9c633970c.pt-br'
+2024-03-13 04:04:23.152 [info] Getting Manifest... ms-python.vscode-pylance
+2024-03-13 04:04:23.302 [info] Installing extension: ms-python.vscode-pylance
+2024-03-13 04:04:24.287 [info] Getting Manifest... ms-python.python
+2024-03-13 04:04:29.044 [info] Extension signature is verified: ms-python.vscode-pylance
+2024-03-13 04:04:33.068 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.3.1: ms-python.vscode-pylance
+2024-03-13 04:04:33.084 [info] Renamed to /root/.vscode/extensions/ms-python.vscode-pylance-2024.3.1
+2024-03-13 04:04:33.096 [info] Extracting extension completed. ms-python.vscode-pylance
+2024-03-13 04:04:33.131 [info] Extension installed successfully: ms-python.vscode-pylance
+2024-03-13 04:04:33.156 [info] Marked extension as uninstalled ms-python.vscode-pylance-2024.2.3
+2024-03-13 04:04:33.211 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-13 16:04:24.109 [info] Getting Manifest... ms-ceintl.vscode-language-pack-pt-br
+2024-03-13 16:04:24.336 [info] Installing extension: ms-ceintl.vscode-language-pack-pt-br
+2024-03-13 16:04:26.007 [info] Extension signature is verified: ms-ceintl.vscode-language-pack-pt-br
+2024-03-13 16:04:26.120 [info] Extracted extension to file:///root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.87.2024031309: ms-ceintl.vscode-language-pack-pt-br
+2024-03-13 16:04:26.126 [info] Renamed to /root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.87.2024031309
+2024-03-13 16:04:26.128 [info] Extracting extension completed. ms-ceintl.vscode-language-pack-pt-br
+2024-03-13 16:04:26.142 [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-pt-br
+2024-03-13 16:04:26.221 [info] Marked extension as uninstalled ms-ceintl.vscode-language-pack-pt-br-1.87.2024030609
+2024-03-13 16:04:26.226 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-13 16:04:26.260 [info] Extension installed successfully: ms-ceintl.vscode-language-pack-pt-br
+2024-03-15 16:25:44.450 [info] Getting Manifest... ibm.db2forzosdeveloperextension
+2024-03-15 16:25:44.457 [info] Installing extension: ibm.db2forzosdeveloperextension
+2024-03-15 16:25:49.688 [info] Extension signature is verified: ibm.db2forzosdeveloperextension
+2024-03-15 16:25:50.089 [info] Extracted extension to file:///root/.vscode/extensions/ibm.db2forzosdeveloperextension-2.1.4: ibm.db2forzosdeveloperextension
+2024-03-15 16:25:50.095 [info] Renamed to /root/.vscode/extensions/ibm.db2forzosdeveloperextension-2.1.4
+2024-03-15 16:25:50.098 [info] Extracting extension completed. ibm.db2forzosdeveloperextension
+2024-03-15 16:25:50.107 [info] Extension installed successfully: ibm.db2forzosdeveloperextension
+2024-03-15 16:25:50.180 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-15 16:28:22.939 [info] Getting Manifest... mtxr.sqltools
+2024-03-15 16:28:22.947 [info] Installing extension: mtxr.sqltools
+2024-03-15 16:28:24.799 [info] Extension signature is verified: mtxr.sqltools
+2024-03-15 16:28:24.860 [info] Extracted extension to file:///root/.vscode/extensions/mtxr.sqltools-0.28.1: mtxr.sqltools
+2024-03-15 16:28:24.866 [info] Renamed to /root/.vscode/extensions/mtxr.sqltools-0.28.1
+2024-03-15 16:28:24.868 [info] Extracting extension completed. mtxr.sqltools
+2024-03-15 16:28:24.876 [info] Extension installed successfully: mtxr.sqltools
+2024-03-15 16:28:24.948 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-15 16:31:28.183 [info] Getting Manifest... mtxr.sqltools-driver-pg
+2024-03-15 16:31:28.192 [info] Installing extension: mtxr.sqltools-driver-pg
+2024-03-15 16:31:28.538 [info] Getting Manifest... mtxr.sqltools
+2024-03-15 16:31:29.905 [info] Extension signature is verified: mtxr.sqltools-driver-pg
+2024-03-15 16:31:29.943 [info] Extracted extension to file:///root/.vscode/extensions/mtxr.sqltools-driver-pg-0.5.2: mtxr.sqltools-driver-pg
+2024-03-15 16:31:29.949 [info] Renamed to /root/.vscode/extensions/mtxr.sqltools-driver-pg-0.5.2
+2024-03-15 16:31:29.950 [info] Extracting extension completed. mtxr.sqltools-driver-pg
+2024-03-15 16:31:29.987 [info] Extension installed successfully: mtxr.sqltools-driver-pg
+2024-03-15 16:31:30.031 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-15 16:38:41.076 [info] Uninstalling extension from the profile: mtxr.sqltools-driver-pg@0.5.2 vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-03-15 16:38:41.102 [info] Marked extension as uninstalled mtxr.sqltools-driver-pg-0.5.2
+2024-03-15 16:38:41.169 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-15 16:38:41.536 [info] Successfully uninstalled extension from the profile mtxr.sqltools-driver-pg@0.5.2 vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-03-15 16:38:50.941 [error] [uncaught exception in sharedProcess]: Event not found: onDidChange: CodeExpectedError: Event not found: onDidChange
+    at Object.listen (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:45:4960)
+    at E.t (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:44:251)
+    at E.q (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:4371)
+    at y.value (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:3602)
+    at d.y (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1902)
+    at d.z (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1972)
+    at d.fire (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:2188)
+    at MessagePortMain.fe (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:36:30382)
+    at MessagePortMain.emit (node:events:514:28)
+    at Object.emit (node:electron/js2c/utility_init:2:2285)
+2024-03-22 16:39:23.035 [info] Getting Manifest... ibm.db2forzosdeveloperextension
+2024-03-22 16:39:23.167 [info] Installing extension: ibm.db2forzosdeveloperextension
+2024-03-22 16:39:28.780 [info] Extension signature is verified: ibm.db2forzosdeveloperextension
+2024-03-22 16:39:29.284 [info] Extracted extension to file:///root/.vscode/extensions/ibm.db2forzosdeveloperextension-2.1.5: ibm.db2forzosdeveloperextension
+2024-03-22 16:39:29.292 [info] Renamed to /root/.vscode/extensions/ibm.db2forzosdeveloperextension-2.1.5
+2024-03-22 16:39:29.295 [info] Extracting extension completed. ibm.db2forzosdeveloperextension
+2024-03-22 16:39:29.307 [info] Extension installed successfully: ibm.db2forzosdeveloperextension
+2024-03-22 16:39:29.310 [info] Marked extension as uninstalled ibm.db2forzosdeveloperextension-2.1.4
+2024-03-22 16:39:29.380 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/154/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)

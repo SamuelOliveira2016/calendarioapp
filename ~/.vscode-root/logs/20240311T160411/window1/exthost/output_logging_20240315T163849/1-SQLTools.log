@@ -1,0 +1,663 @@
+[1710531529605] INFO  (ext): SQLTools is starting
+[1710531529608] INFO  (ext): initializing language client...
+[1710531529609] INFO  (ext): Registering client for languages [{"scheme":"sqltools"},{"language":"sql","scheme":"untitled"},{"language":"sql","scheme":"file"},{"language":"sql","scheme":"sqltools"}]
+    ns: "lc"
+[1710531529613] INFO  (ext): loading plugins...
+[1710531529614] INFO  (ext): registering Formatter Plugin.
+    plugin: {
+      "name": "Formatter Plugin"
+    }
+[1710531529615] INFO  (ext): registering Connection Manager Plugin.
+    plugin: {
+      "name": "Connection Manager Plugin"
+    }
+[1710531529615] INFO  (ext): registering CodeLens Plugin.
+    plugin: {
+      "name": "CodeLens Plugin",
+      "registeredLanguages": []
+    }
+[1710531529617] INFO  (ext): registering Dependency Manager Plugin.
+    plugin: {
+      "name": "Dependency Manager Plugin",
+      "installingDrivers": []
+    }
+[1710531529620] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710531529621] INFO  (ext): registering History Manager Plugin.
+    plugin: {
+      "name": "History Manager Plugin"
+    }
+[1710531529621] INFO  (ext): registering Bookmarks Manager Plugin.
+    plugin: {
+      "name": "Bookmarks Manager Plugin"
+    }
+[1710531529623] INFO  (ext): registering Authentication Provider Plugin.
+    plugin: {
+      "name": "Authentication Provider Plugin",
+      "isRegistered": false
+    }
+[1710531529623] INFO  (ext): registering Object Drop-in Provider (plugin).
+    plugin: {
+      "type": "plugin",
+      "name": "Object Drop-in Provider",
+      "isRegistered": false
+    }
+[1710531529625] INFO  (ext): SQLTools activation completed. 18.952732 ms
+[1710531529625] INFO  (ext): Formatter Plugin registered!
+[1710531529625] INFO  (ext): CodeLens Plugin registered!
+[1710531529625] INFO  (ext): Dependency Manager Plugin registered!
+[1710531529625] INFO  (ext): Connection Manager Plugin registered!
+[1710531529625] INFO  (ext): History Manager Plugin registered!
+[1710531529625] INFO  (ext): Bookmarks Manager Plugin registered!
+[1710531529625] INFO  (ext): Authentication Provider Plugin registered!
+[1710531529625] INFO  (ext): Object Drop-in Provider (plugin) registered!
+[1710531529939] INFO  (ls): SQLTools Server started!
+===============================
+Using node runtime?: no
+ExecPath: /snap/code/154/usr/share/code/code 
+===============================
+[1710531529951] INFO  (ext): LanguageClient ready
+    ns: "lc"
+[1710531529949] INFO  (ls): Initialized with node version:v18.17.1
+[1710531531016] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1710531531016] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710531531624] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710532100611] INFO  (ext): EXECUTING COMMAND => sqltools.setSelection
+[1710537239003] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710951382472] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710957274914] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710957528862] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710957531940] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710957534923] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710957536225] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710963418074] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710964657797] INFO  (ls): completion requested {"line":0,"character":13}
+    ns: "intellisense"
+[1710964657815] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1710964662862] INFO  (ls): completion requested {"line":0,"character":21}
+    ns: "intellisense"
+[1710964662865] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1710964662904] INFO  (ls): completion requested {"line":0,"character":22}
+    ns: "intellisense"
+[1710964662905] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1710964664569] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1710964664570] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1710964665106] INFO  (ls): completion requested {"line":0,"character":24}
+    ns: "intellisense"
+[1710964665107] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1710964665812] INFO  (ls): completion requested {"line":0,"character":28}
+    ns: "intellisense"
+[1710964665813] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1710964665890] INFO  (ls): completion requested {"line":0,"character":29}
+    ns: "intellisense"
+[1710964665890] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1710964736089] INFO  (ls): completion requested {"line":3,"character":1}
+    ns: "intellisense"
+[1710964736105] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1710967305527] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710968353217] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711036581247] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711036604212] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711036632617] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711036675497] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711036697301] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711036707476] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711036793322] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711037714168] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711037715445] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711038135098] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711038184874] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711039360240] INFO  (ls): completion requested {"line":0,"character":32}
+    ns: "intellisense"
+[1711039360255] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039362279] INFO  (ls): completion requested {"line":0,"character":34}
+    ns: "intellisense"
+[1711039362292] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039362565] INFO  (ls): completion requested {"line":0,"character":35}
+    ns: "intellisense"
+[1711039362589] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039362786] INFO  (ls): completion requested {"line":0,"character":36}
+    ns: "intellisense"
+[1711039362809] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039362962] INFO  (ls): completion requested {"line":0,"character":37}
+    ns: "intellisense"
+[1711039362984] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039363072] INFO  (ls): completion requested {"line":0,"character":38}
+    ns: "intellisense"
+[1711039363091] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039363169] INFO  (ls): completion requested {"line":0,"character":39}
+    ns: "intellisense"
+[1711039363182] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039385140] INFO  (ls): completion requested {"line":0,"character":32}
+    ns: "intellisense"
+[1711039385156] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039387945] INFO  (ls): completion requested {"line":0,"character":36}
+    ns: "intellisense"
+[1711039387958] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039394756] INFO  (ls): completion requested {"line":0,"character":37}
+    ns: "intellisense"
+[1711039394769] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039399451] INFO  (ls): completion requested {"line":0,"character":48}
+    ns: "intellisense"
+[1711039399478] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039424234] INFO  (ls): completion requested {"line":0,"character":42}
+    ns: "intellisense"
+[1711039424260] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039504832] INFO  (ls): completion requested {"line":3,"character":4}
+    ns: "intellisense"
+[1711039504845] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039514388] INFO  (ls): completion requested {"line":4,"character":1}
+    ns: "intellisense"
+[1711039514400] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039556087] INFO  (ls): completion requested {"line":4,"character":1}
+    ns: "intellisense"
+[1711039556107] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039581898] INFO  (ls): completion requested {"line":4,"character":3}
+    ns: "intellisense"
+[1711039581912] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039586026] INFO  (ls): completion requested {"line":4,"character":4}
+    ns: "intellisense"
+[1711039586056] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039589656] INFO  (ls): completion requested {"line":5,"character":4}
+    ns: "intellisense"
+[1711039589670] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039592420] INFO  (ls): completion requested {"line":6,"character":4}
+    ns: "intellisense"
+[1711039592434] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039595509] INFO  (ls): completion requested {"line":7,"character":4}
+    ns: "intellisense"
+[1711039595529] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039599847] INFO  (ls): completion requested {"line":8,"character":4}
+    ns: "intellisense"
+[1711039599867] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039602982] INFO  (ls): completion requested {"line":9,"character":4}
+    ns: "intellisense"
+[1711039603009] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039606567] INFO  (ls): completion requested {"line":10,"character":4}
+    ns: "intellisense"
+[1711039606581] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039609673] INFO  (ls): completion requested {"line":11,"character":4}
+    ns: "intellisense"
+[1711039609688] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039678327] INFO  (ls): completion requested {"line":30,"character":5}
+    ns: "intellisense"
+[1711039678366] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039795757] INFO  (ls): completion requested {"line":0,"character":61}
+    ns: "intellisense"
+[1711039795778] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039800931] INFO  (ls): completion requested {"line":0,"character":66}
+    ns: "intellisense"
+[1711039800964] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039801020] INFO  (ls): completion requested {"line":0,"character":67}
+    ns: "intellisense"
+[1711039801037] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039801308] INFO  (ls): completion requested {"line":0,"character":68}
+    ns: "intellisense"
+[1711039801324] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039801449] INFO  (ls): completion requested {"line":0,"character":69}
+    ns: "intellisense"
+[1711039801478] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039801599] INFO  (ls): completion requested {"line":0,"character":70}
+    ns: "intellisense"
+[1711039801616] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039801748] INFO  (ls): completion requested {"line":0,"character":71}
+    ns: "intellisense"
+[1711039801765] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039923604] INFO  (ls): completion requested {"line":3,"character":43}
+    ns: "intellisense"
+[1711039923627] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039962694] INFO  (ls): completion requested {"line":4,"character":31}
+    ns: "intellisense"
+[1711039962722] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711039967691] INFO  (ls): completion requested {"line":4,"character":34}
+    ns: "intellisense"
+[1711039967710] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040006114] INFO  (ls): completion requested {"line":6,"character":32}
+    ns: "intellisense"
+[1711040006140] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040007858] INFO  (ls): completion requested {"line":6,"character":35}
+    ns: "intellisense"
+[1711040007872] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040010356] INFO  (ls): completion requested {"line":5,"character":32}
+    ns: "intellisense"
+[1711040010374] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040018061] INFO  (ls): completion requested {"line":7,"character":46}
+    ns: "intellisense"
+[1711040018078] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040024468] INFO  (ls): completion requested {"line":7,"character":44}
+    ns: "intellisense"
+[1711040024483] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040033840] INFO  (ls): completion requested {"line":8,"character":40}
+    ns: "intellisense"
+[1711040033854] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040056227] INFO  (ls): completion requested {"line":10,"character":55}
+    ns: "intellisense"
+[1711040056246] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040071632] INFO  (ls): completion requested {"line":11,"character":44}
+    ns: "intellisense"
+[1711040071653] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040073009] INFO  (ls): completion requested {"line":11,"character":43}
+    ns: "intellisense"
+[1711040073026] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040088307] INFO  (ls): completion requested {"line":12,"character":41}
+    ns: "intellisense"
+[1711040088320] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040094946] INFO  (ls): completion requested {"line":13,"character":44}
+    ns: "intellisense"
+[1711040094966] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040096723] INFO  (ls): completion requested {"line":13,"character":47}
+    ns: "intellisense"
+[1711040096735] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040230130] INFO  (ls): completion requested {"line":14,"character":40}
+    ns: "intellisense"
+[1711040230146] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040231327] INFO  (ls): completion requested {"line":14,"character":43}
+    ns: "intellisense"
+[1711040231340] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040242083] INFO  (ls): completion requested {"line":15,"character":49}
+    ns: "intellisense"
+[1711040242108] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040287011] INFO  (ls): completion requested {"line":17,"character":50}
+    ns: "intellisense"
+[1711040287024] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040326772] INFO  (ls): completion requested {"line":18,"character":37}
+    ns: "intellisense"
+[1711040326785] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040331730] INFO  (ls): completion requested {"line":17,"character":47}
+    ns: "intellisense"
+[1711040331748] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040338959] INFO  (ls): completion requested {"line":19,"character":42}
+    ns: "intellisense"
+[1711040338970] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040354720] INFO  (ls): completion requested {"line":20,"character":36}
+    ns: "intellisense"
+[1711040354732] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040370625] INFO  (ls): completion requested {"line":21,"character":45}
+    ns: "intellisense"
+[1711040370637] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040378369] INFO  (ls): completion requested {"line":22,"character":44}
+    ns: "intellisense"
+[1711040378381] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040380416] INFO  (ls): completion requested {"line":22,"character":46}
+    ns: "intellisense"
+[1711040380428] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040388691] INFO  (ls): completion requested {"line":23,"character":62}
+    ns: "intellisense"
+[1711040388703] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040401521] INFO  (ls): completion requested {"line":24,"character":41}
+    ns: "intellisense"
+[1711040401534] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040422832] INFO  (ls): completion requested {"line":25,"character":41}
+    ns: "intellisense"
+[1711040422842] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040427791] INFO  (ls): completion requested {"line":23,"character":59}
+    ns: "intellisense"
+[1711040427803] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040440256] INFO  (ls): completion requested {"line":26,"character":39}
+    ns: "intellisense"
+[1711040440266] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040447118] INFO  (ls): completion requested {"line":26,"character":36}
+    ns: "intellisense"
+[1711040447129] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040457261] INFO  (ls): completion requested {"line":27,"character":42}
+    ns: "intellisense"
+[1711040457270] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040459772] INFO  (ls): completion requested {"line":27,"character":43}
+    ns: "intellisense"
+[1711040459785] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040488687] INFO  (ls): completion requested {"line":28,"character":44}
+    ns: "intellisense"
+[1711040488698] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040489636] INFO  (ls): completion requested {"line":28,"character":47}
+    ns: "intellisense"
+[1711040489645] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040493718] INFO  (ls): completion requested {"line":29,"character":45}
+    ns: "intellisense"
+[1711040493726] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040496365] INFO  (ls): completion requested {"line":30,"character":44}
+    ns: "intellisense"
+[1711040496377] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040500674] INFO  (ls): completion requested {"line":30,"character":47}
+    ns: "intellisense"
+[1711040500689] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040525076] INFO  (ls): completion requested {"line":0,"character":74}
+    ns: "intellisense"
+[1711040525097] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040526037] INFO  (ls): completion requested {"line":0,"character":79}
+    ns: "intellisense"
+[1711040526057] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040526270] INFO  (ls): completion requested {"line":0,"character":80}
+    ns: "intellisense"
+[1711040526287] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040585789] INFO  (ls): completion requested {"line":0,"character":82}
+    ns: "intellisense"
+[1711040585799] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040591941] INFO  (ls): completion requested {"line":0,"character":83}
+    ns: "intellisense"
+[1711040591950] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040594343] INFO  (ls): completion requested {"line":0,"character":86}
+    ns: "intellisense"
+[1711040594357] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040594564] INFO  (ls): completion requested {"line":0,"character":87}
+    ns: "intellisense"
+[1711040594580] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040594736] INFO  (ls): completion requested {"line":0,"character":88}
+    ns: "intellisense"
+[1711040594749] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040594978] INFO  (ls): completion requested {"line":0,"character":89}
+    ns: "intellisense"
+[1711040594990] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040595065] INFO  (ls): completion requested {"line":0,"character":90}
+    ns: "intellisense"
+[1711040595073] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040595287] INFO  (ls): completion requested {"line":0,"character":91}
+    ns: "intellisense"
+[1711040595296] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040595491] INFO  (ls): completion requested {"line":0,"character":92}
+    ns: "intellisense"
+[1711040595499] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040611276] INFO  (ls): completion requested {"line":3,"character":49}
+    ns: "intellisense"
+[1711040611285] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040657632] INFO  (ls): completion requested {"line":4,"character":37}
+    ns: "intellisense"
+[1711040657643] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711040818338] INFO  (ls): completion requested {"line":23,"character":65}
+    ns: "intellisense"
+[1711040818364] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044565911] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1711044579858] INFO  (ls): completion requested {"line":0,"character":24}
+    ns: "intellisense"
+[1711044579868] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044580895] INFO  (ls): completion requested {"line":0,"character":29}
+    ns: "intellisense"
+[1711044580907] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044581267] INFO  (ls): completion requested {"line":0,"character":30}
+    ns: "intellisense"
+[1711044581282] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044582681] INFO  (ls): completion requested {"line":0,"character":31}
+    ns: "intellisense"
+[1711044582693] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044582816] INFO  (ls): completion requested {"line":0,"character":32}
+    ns: "intellisense"
+[1711044582825] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044582981] INFO  (ls): completion requested {"line":0,"character":33}
+    ns: "intellisense"
+[1711044582988] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044583124] INFO  (ls): completion requested {"line":0,"character":34}
+    ns: "intellisense"
+[1711044583132] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044583230] INFO  (ls): completion requested {"line":0,"character":35}
+    ns: "intellisense"
+[1711044583243] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044583289] INFO  (ls): completion requested {"line":0,"character":36}
+    ns: "intellisense"
+[1711044583296] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044583465] INFO  (ls): completion requested {"line":0,"character":37}
+    ns: "intellisense"
+[1711044583478] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044584971] INFO  (ls): completion requested {"line":0,"character":36}
+    ns: "intellisense"
+[1711044584981] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044585147] INFO  (ls): completion requested {"line":0,"character":37}
+    ns: "intellisense"
+[1711044585154] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044661391] INFO  (ls): completion requested {"line":0,"character":41}
+    ns: "intellisense"
+[1711044661399] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044662328] INFO  (ls): completion requested {"line":0,"character":46}
+    ns: "intellisense"
+[1711044662342] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044662458] INFO  (ls): completion requested {"line":0,"character":47}
+    ns: "intellisense"
+[1711044662465] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044662628] INFO  (ls): completion requested {"line":0,"character":48}
+    ns: "intellisense"
+[1711044662635] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044666341] INFO  (ls): completion requested {"line":0,"character":49}
+    ns: "intellisense"
+[1711044666348] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044667040] INFO  (ls): completion requested {"line":0,"character":50}
+    ns: "intellisense"
+[1711044667052] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044667556] INFO  (ls): completion requested {"line":0,"character":51}
+    ns: "intellisense"
+[1711044667564] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044667923] INFO  (ls): completion requested {"line":0,"character":52}
+    ns: "intellisense"
+[1711044667931] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044668213] INFO  (ls): completion requested {"line":0,"character":53}
+    ns: "intellisense"
+[1711044668222] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044668356] INFO  (ls): completion requested {"line":0,"character":54}
+    ns: "intellisense"
+[1711044668363] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044668546] INFO  (ls): completion requested {"line":0,"character":55}
+    ns: "intellisense"
+[1711044668554] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044682361] INFO  (ls): completion requested {"line":0,"character":58}
+    ns: "intellisense"
+[1711044682375] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044686349] INFO  (ls): completion requested {"line":0,"character":63}
+    ns: "intellisense"
+[1711044686358] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044686749] INFO  (ls): completion requested {"line":0,"character":64}
+    ns: "intellisense"
+[1711044686759] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044687640] INFO  (ls): completion requested {"line":0,"character":65}
+    ns: "intellisense"
+[1711044687650] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044687780] INFO  (ls): completion requested {"line":0,"character":66}
+    ns: "intellisense"
+[1711044687790] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044687992] INFO  (ls): completion requested {"line":0,"character":67}
+    ns: "intellisense"
+[1711044687999] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044688597] INFO  (ls): completion requested {"line":0,"character":68}
+    ns: "intellisense"
+[1711044688604] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044688812] INFO  (ls): completion requested {"line":0,"character":69}
+    ns: "intellisense"
+[1711044688820] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044689133] INFO  (ls): completion requested {"line":0,"character":70}
+    ns: "intellisense"
+[1711044689141] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044690125] INFO  (ls): completion requested {"line":0,"character":71}
+    ns: "intellisense"
+[1711044690137] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044690403] INFO  (ls): completion requested {"line":0,"character":72}
+    ns: "intellisense"
+[1711044690411] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044690635] INFO  (ls): completion requested {"line":0,"character":73}
+    ns: "intellisense"
+[1711044690642] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044690780] INFO  (ls): completion requested {"line":0,"character":74}
+    ns: "intellisense"
+[1711044690789] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044691670] INFO  (ls): completion requested {"line":0,"character":75}
+    ns: "intellisense"
+[1711044691679] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044691923] INFO  (ls): completion requested {"line":0,"character":76}
+    ns: "intellisense"
+[1711044691938] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711044954167] INFO  (ls): completion requested {"line":4,"character":1}
+    ns: "intellisense"
+[1711044954170] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711045087233] INFO  (ls): completion requested {"line":11,"character":28}
+    ns: "intellisense"
+[1711045087235] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711045173484] INFO  (ls): completion requested {"line":4,"character":23}
+    ns: "intellisense"
+[1711045173489] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711045429895] INFO  (ls): completion requested {"line":35,"character":21}
+    ns: "intellisense"
+[1711045429899] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1711045587677] INFO  (ls): completion requested {"line":39,"character":1}
+    ns: "intellisense"
+[1711045587683] INFO  (ls): no active connection completions count: 0
+    ns: "intellisense"
+[1712337813920] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1712338807280] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
