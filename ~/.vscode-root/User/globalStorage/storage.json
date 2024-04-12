@@ -56,7 +56,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reabrir o Editor Fechado"
+                                    "label": "&&Reabrir o Editor Fechado",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -74,6 +75,61 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/models.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/models.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/models.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/urls.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/urls.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/urls.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/my_project/settings.py",
+                                        "path": "/home/servidor/calendarioapp/my_project/settings.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/my_project/settings.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0001_initial.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0001_initial.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0001_initial.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0035_alter_aula_unidadecurricularf_and_more.py",
+                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0035_alter_aula_unidadecurricularf_and_more.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0035_alter_aula_unidadecurricularf_and_more.py"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -129,39 +185,6 @@
                                     },
                                     "enabled": true,
                                     "label": "/home/servidor/calendarioapp/webpages/migrations/0030_horaaulacargahoraria_periodo.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py",
-                                        "path": "/home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/home/servidor/calendarioapp/webpages/migrations/0021_remove_evento_calendario_academico_and_more.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/servidor/calendarioapp/webpages/models.py",
-                                        "path": "/home/servidor/calendarioapp/webpages/models.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/home/servidor/calendarioapp/webpages/models.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/servidor/calendarioapp/webpages/models2.py",
-                                        "path": "/home/servidor/calendarioapp/webpages/models2.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/home/servidor/calendarioapp/webpages/models2.py"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -551,7 +574,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Barra Lateral Primária"
+                                    "label": "&&Barra Lateral Primária",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -875,7 +899,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Voltar"
+                        "label": "&&Voltar",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -884,7 +909,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Localização da Última Edição"
+                        "label": "&&Localização da Última Edição",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1103,8 +1129,7 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Abrir as &&Configurações",
-                        "enabled": false
+                        "label": "Abrir as &&Configurações"
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1204,7 +1229,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Dividir o Terminal"
+                        "label": "&&Dividir o Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1324,7 +1350,7 @@
                     },
                     {
                         "id": "workbench.action.toggleDevTools",
-                        "label": "Toggle Developer Tools"
+                        "label": "Ativar/Desativar Ferramentas para Desenvolvedores"
                     },
                     {
                         "id": "workbench.action.openProcessExplorer",
@@ -1677,8 +1703,9 @@
                 "userSettingsLabel": "ctrl+k ctrl+down"
             },
             "workbench.action.quickOpen": {
-                "label": "Ctrl+P",
-                "userSettingsLabel": "ctrl+p"
+                "label": "Ctrl+E Ctrl+E",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+e ctrl+e"
             },
             "workbench.action.showAllSymbols": {
                 "label": "Ctrl+T",
@@ -1800,7 +1827,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 256,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1813,7 +1840,7 @@
                 "mode": 1,
                 "x": 70,
                 "y": 64,
-                "width": 925,
+                "width": 1850,
                 "height": 1016
             }
         },

@@ -1,0 +1,16 @@
+2024-04-12 12:55:34.356 [info] (Client) Pylance async client (2024.3.1) started with python extension (2024.2.1)
+2024-04-12 12:55:35.191 [info] [Info  - 12:55:35] (584846) Pylance language server 2024.3.1 (pyright version 1.1.351, commit 87171fbf) starting
+2024-04-12 12:55:35.191 [info] [Info  - 12:55:35] (584846) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.3.1/dist
+2024-04-12 12:55:35.199 [info] [Info  - 12:55:35] (584846) Starting service instance "calendarioapp"
+2024-04-12 12:55:35.271 [info] [Info  - 12:55:35] (584846) Setting pythonPath for service "calendarioapp": "/home/servidor/calendarioapp/venv/bin/python"
+2024-04-12 12:55:35.271 [info] [Info  - 12:55:35] (584846) Setting environmentName for service "calendarioapp": "3.10.12 (venv venv)"
+2024-04-12 12:55:35.313 [info] [Info  - 12:55:35] (584846) Assuming Python version 3.10
+2024-04-12 12:55:35.441 [info] [Info  - 12:55:35] (584846) Auto-excluding /home/servidor/calendarioapp/venv
+2024-04-12 12:55:35.452 [info] [Info  - 12:55:35] (584846) Found 33 source files
+2024-04-12 12:55:36.066 [info] [Info  - 12:55:36] (584846) Background analysis(1) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.3.1/dist
+2024-04-12 12:55:36.068 [info] [Info  - 12:55:36] (584846) Background analysis(1) started
+2024-04-12 12:55:36.257 [info] [Info  - 12:55:36] (584846) Indexer background runner(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.3.1/dist (index)
+2024-04-12 12:55:36.257 [info] [Info  - 12:55:36] (584846) Indexing(2) started
+2024-04-12 12:55:37.220 [info] [Info  - 12:55:37] (584846) scanned(2) 60 files over 1 exec env
+2024-04-12 12:55:38.264 [info] [Info  - 12:55:38] (584846) indexed(2) 45 files over 1 exec env
+2024-04-12 12:55:38.389 [info] [Info  - 12:55:38] (584846) Indexing finished(2).

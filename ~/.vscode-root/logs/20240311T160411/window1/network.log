@@ -1,0 +1,4 @@
+2024-03-14 16:04:25.046 [error] browser #13: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST Offline
+2024-03-15 16:25:32.644 [error] browser #15: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST Canceled
+2024-03-15 16:28:15.510 [error] browser #26: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST Canceled
+2024-03-23 16:40:32.232 [error] browser #35: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST XHR failed

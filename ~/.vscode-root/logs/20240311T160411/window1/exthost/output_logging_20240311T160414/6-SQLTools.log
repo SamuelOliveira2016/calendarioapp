@@ -1,0 +1,115 @@
+[1710530905243] INFO  (ext): SQLTools is starting
+[1710530905245] INFO  (ext): initializing language client...
+[1710530905246] INFO  (ext): Registering client for languages [{"scheme":"sqltools"},{"language":"sql","scheme":"untitled"},{"language":"sql","scheme":"file"},{"language":"sql","scheme":"sqltools"}]
+    ns: "lc"
+[1710530905255] INFO  (ext): loading plugins...
+[1710530905255] INFO  (ext): registering Formatter Plugin.
+    plugin: {
+      "name": "Formatter Plugin"
+    }
+[1710530905256] INFO  (ext): registering Connection Manager Plugin.
+    plugin: {
+      "name": "Connection Manager Plugin"
+    }
+[1710530905257] INFO  (ext): registering CodeLens Plugin.
+    plugin: {
+      "name": "CodeLens Plugin",
+      "registeredLanguages": []
+    }
+[1710530905258] INFO  (ext): registering Dependency Manager Plugin.
+    plugin: {
+      "name": "Dependency Manager Plugin",
+      "installingDrivers": []
+    }
+[1710530905263] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710530905263] INFO  (ext): registering History Manager Plugin.
+    plugin: {
+      "name": "History Manager Plugin"
+    }
+[1710530905265] INFO  (ext): registering Bookmarks Manager Plugin.
+    plugin: {
+      "name": "Bookmarks Manager Plugin"
+    }
+[1710530905266] INFO  (ext): registering Authentication Provider Plugin.
+    plugin: {
+      "name": "Authentication Provider Plugin",
+      "isRegistered": false
+    }
+[1710530905267] INFO  (ext): registering Object Drop-in Provider (plugin).
+    plugin: {
+      "type": "plugin",
+      "name": "Object Drop-in Provider",
+      "isRegistered": false
+    }
+[1710530905268] INFO  (ext): SQLTools activation completed. 24.970577 ms
+[1710530905268] INFO  (ext): Formatter Plugin registered!
+[1710530905268] INFO  (ext): CodeLens Plugin registered!
+[1710530905268] INFO  (ext): Dependency Manager Plugin registered!
+[1710530905268] INFO  (ext): Connection Manager Plugin registered!
+[1710530905268] INFO  (ext): History Manager Plugin registered!
+[1710530905268] INFO  (ext): Bookmarks Manager Plugin registered!
+[1710530905268] INFO  (ext): Authentication Provider Plugin registered!
+[1710530905268] INFO  (ext): Object Drop-in Provider (plugin) registered!
+[1710530905527] INFO  (ls): SQLTools Server started!
+===============================
+Using node runtime?: no
+ExecPath: /snap/code/154/usr/share/code/code 
+===============================
+[1710530905537] INFO  (ext): LanguageClient ready
+    ns: "lc"
+[1710530905532] INFO  (ls): Initialized with node version:v18.17.1
+[1710530906269] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1710530906270] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710530907264] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710530935707] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1710530935708] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1710530935709] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710530935710] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710530935711] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710530940543] INFO  (ext): EXECUTING COMMAND => sqltools.setSelection
+[1710530949996] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710531006190] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710531090151] INFO  (ext): registering PostgreSQL/Cockroach Plugin (driver).
+    plugin: {
+      "extensionId": "mtxr.sqltools-driver-pg",
+      "name": "PostgreSQL/Cockroach Plugin",
+      "type": "driver"
+    }
+[1710531090152] INFO  (ls): REQUEST RECEIVED => ls/RegisterPlugin
+[1710531090153] INFO  (ls): request to register plugin: "/root/.vscode/extensions/mtxr.sqltools-driver-pg-0.5.2/out/ls/plugin.js"
+[1710531090231] INFO  (ls): Driver postgresql registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1710531090232] INFO  (ls): Driver aws redshift registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1710531090232] INFO  (ls): Driver cockroachdb registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1710531090238] INFO  (ext): PostgreSQL/Cockroach Plugin (driver) registered!
+[1710531091239] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1710531091239] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710531130093] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710531310238] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1710531464260] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1710531464260] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1710531464261] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710531464262] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710531464263] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710531467883] INFO  (ext): EXECUTING COMMAND => sqltools.setSelection
+[1710531470652] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1710531470652] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1710531470652] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710531470653] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710531470653] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1710531473523] INFO  (ext): EXECUTING COMMAND => sqltools.setSelection
+[1710531490334] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
