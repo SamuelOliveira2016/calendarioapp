@@ -1,0 +1,24 @@
+2024-04-12 12:55:34.004 [info] Nível de log: Info
+2024-04-12 12:55:34.005 [info] Validando o git encontrado em: git
+2024-04-12 12:55:34.005 [info] Usando git ''2.34.1'' de ''git''
+2024-04-12 12:55:34.005 [info] > git rev-parse --show-toplevel [36ms]
+2024-04-12 12:55:34.005 [info] > git rev-parse --git-dir --git-common-dir [4ms]
+2024-04-12 12:55:34.005 [info] Open repository: /home/servidor/calendarioapp
+2024-04-12 12:55:34.036 [info] > git rev-parse --show-toplevel [9ms]
+2024-04-12 12:55:34.037 [info] > git config --get commit.template [22ms]
+2024-04-12 12:55:34.068 [info] > git rev-parse --show-toplevel [17ms]
+2024-04-12 12:55:34.079 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/banconovo refs/remotes/banconovo [14ms]
+2024-04-12 12:55:34.098 [info] > git rev-parse --show-toplevel [20ms]
+2024-04-12 12:55:34.138 [info] > git rev-parse --show-toplevel [3ms]
+2024-04-12 12:55:34.152 [info] > git rev-parse --show-toplevel [3ms]
+2024-04-12 12:55:34.165 [info] > git rev-parse --show-toplevel [3ms]
+2024-04-12 12:55:34.205 [info] > git rev-parse --show-toplevel [26ms]
+2024-04-12 12:55:34.223 [info] > git rev-parse --show-toplevel [3ms]
+2024-04-12 12:55:34.307 [info] > git status -z -uall [219ms]
+2024-04-12 12:55:34.375 [info] > git config --get commit.template [25ms]
+2024-04-12 12:55:34.411 [info] > git show --textconv :my_project/settings.py [20ms]
+2024-04-12 12:55:34.454 [info] > git ls-files --stage -- /home/servidor/calendarioapp/my_project/settings.py [51ms]
+2024-04-12 12:55:34.468 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/banconovo refs/remotes/banconovo [14ms]
+2024-04-12 12:55:34.480 [info] > git cat-file -s 74a9dd9d77294e0c31eb7e408b3b1524759b97ae [14ms]
+2024-04-12 12:55:34.642 [info] > git check-ignore -v -z --stdin [34ms]
+2024-04-12 12:55:34.658 [info] > git status -z -uall [180ms]

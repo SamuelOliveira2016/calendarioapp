@@ -1,0 +1,83 @@
+2024-04-12 12:55:30.559 [info] Deleted uninstalled extension from disk ibm.db2forzosdeveloperextension /root/.vscode/extensions/ibm.db2forzosdeveloperextension-2.1.4
+2024-04-12 12:55:30.560 [info] Deleted uninstalled extension from disk ms-python.vscode-pylance /root/.vscode/extensions/ms-python.vscode-pylance-2024.2.2
+2024-04-12 12:55:30.560 [info] Deleted uninstalled extension from disk mtxr.sqltools-driver-pg /root/.vscode/extensions/mtxr.sqltools-driver-pg-0.5.2
+2024-04-12 12:55:30.590 [info] Deleted uninstalled extension from disk ms-ceintl.vscode-language-pack-pt-br /root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.87.2024022809
+2024-04-12 12:55:30.591 [info] Deleted uninstalled extension from disk ms-ceintl.vscode-language-pack-pt-br /root/.vscode/extensions/ms-ceintl.vscode-language-pack-pt-br-1.87.2024030609
+2024-04-12 12:55:30.591 [info] Deleted uninstalled extension from disk ms-python.vscode-pylance /root/.vscode/extensions/ms-python.vscode-pylance-2024.2.3
+2024-04-12 12:55:32.464 [error] [uncaught exception in sharedProcess]: Event not found: onDidChange: CodeExpectedError: Event not found: onDidChange
+    at Object.listen (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:45:4960)
+    at E.t (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:44:251)
+    at E.q (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:4371)
+    at y.value (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:43:3602)
+    at d.y (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1902)
+    at d.z (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:1972)
+    at d.fire (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:38:2188)
+    at MessagePortMain.fe (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:36:30382)
+    at MessagePortMain.emit (node:events:514:28)
+    at Object.emit (node:electron/js2c/utility_init:2:2285)
+2024-04-12 12:55:35.064 [info] Getting Manifest... ms-python.debugpy
+2024-04-12 12:55:35.065 [info] Getting Manifest... ms-python.python
+2024-04-12 12:55:35.066 [info] Getting Manifest... ms-python.vscode-pylance
+2024-04-12 12:55:35.067 [info] Getting Manifest... mtxr.sqltools
+2024-04-12 12:55:35.137 [info] Installing extension: ms-python.vscode-pylance
+2024-04-12 12:55:35.139 [info] Installing extension: ms-python.debugpy
+2024-04-12 12:55:35.169 [info] Installing extension: ms-python.python
+2024-04-12 12:55:35.172 [info] Installing extension: mtxr.sqltools
+2024-04-12 12:55:36.128 [info] Getting Manifest... ms-python.python
+2024-04-12 12:55:36.147 [info] Getting Manifest... ms-python.python
+2024-04-12 12:55:36.366 [info] Waiting for already requested installing extension ms-python.python ms-python.debugpy
+2024-04-12 12:55:36.416 [info] Waiting for already requested installing extension ms-python.python ms-python.vscode-pylance
+2024-04-12 12:55:40.089 [info] Extension signature is verified: mtxr.sqltools
+2024-04-12 12:55:40.254 [info] Extracted extension to file:///root/.vscode/extensions/mtxr.sqltools-0.28.2: mtxr.sqltools
+2024-04-12 12:55:40.261 [info] Renamed to /root/.vscode/extensions/mtxr.sqltools-0.28.2
+2024-04-12 12:55:40.263 [info] Extracting extension completed. mtxr.sqltools
+2024-04-12 12:55:40.277 [info] Extension installed successfully: mtxr.sqltools
+2024-04-12 12:55:40.283 [info] Marked extension as uninstalled mtxr.sqltools-0.28.1
+2024-04-12 12:55:40.352 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-04-12 12:55:40.552 [info] Extension signature is verified: ms-python.python
+2024-04-12 12:55:40.690 [info] Extension signature is verified: ms-python.debugpy
+2024-04-12 12:55:41.332 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.debugpy-2024.4.0-linux-x64: ms-python.debugpy
+2024-04-12 12:55:41.342 [info] Renamed to /root/.vscode/extensions/ms-python.debugpy-2024.4.0-linux-x64
+2024-04-12 12:55:41.344 [info] Extracting extension completed. ms-python.debugpy
+2024-04-12 12:55:41.359 [info] Marked extension as uninstalled ms-python.debugpy-2024.2.0-linux-x64
+2024-04-12 12:55:41.428 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-04-12 12:55:41.448 [info] Extension signature is verified: ms-python.vscode-pylance
+2024-04-12 12:55:43.664 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.python-2024.4.1: ms-python.python
+2024-04-12 12:55:43.708 [info] Renamed to /root/.vscode/extensions/ms-python.python-2024.4.1
+2024-04-12 12:55:43.713 [info] Extracting extension completed. ms-python.python
+2024-04-12 12:55:43.727 [info] Extension installed successfully: ms-python.python
+2024-04-12 12:55:43.728 [info] Finished waiting for already requested installing extension ms-python.python ms-python.debugpy
+2024-04-12 12:55:43.728 [info] Finished waiting for already requested installing extension ms-python.python ms-python.vscode-pylance
+2024-04-12 12:55:43.728 [info] Extension installed successfully: ms-python.debugpy
+2024-04-12 12:55:43.734 [info] Marked extension as uninstalled ms-python.python-2024.2.1
+2024-04-12 12:55:43.796 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-04-12 12:55:46.298 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.4.1: ms-python.vscode-pylance
+2024-04-12 12:55:46.322 [info] Renamed to /root/.vscode/extensions/ms-python.vscode-pylance-2024.4.1
+2024-04-12 12:55:46.326 [info] Extracting extension completed. ms-python.vscode-pylance
+2024-04-12 12:55:46.341 [info] Extension installed successfully: ms-python.vscode-pylance
+2024-04-12 12:55:46.347 [info] Marked extension as uninstalled ms-python.vscode-pylance-2024.3.1
+2024-04-12 12:55:46.415 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/snap/code/155/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)

@@ -1,0 +1,25 @@
+2024-04-12 12:55:32.213 [info] O experimento 'pythonRecommendTensorboardExt' está ativo
+2024-04-12 12:55:32.213 [info] O experimento 'pythonREPLSmartSend' está ativo
+2024-04-12 12:55:32.213 [info] O experimento 'pythonSurveyNotificationcf' está ativo
+2024-04-12 12:55:32.213 [info] O experimento 'pythonTerminalEnvVarActivation' está ativo
+2024-04-12 12:55:32.213 [info] O experimento 'pythonTestAdapter' está ativo
+2024-04-12 12:55:32.269 [info] Default formatter is set to null for workspace /home/servidor/calendarioapp
+2024-04-12 12:55:32.291 [info] Test server listening.
+2024-04-12 12:55:32.338 [info] Caminho do interpretador Python: ./venv/bin/python
+2024-04-12 12:55:33.461 [error] Custom .env is likely not pointing to a valid file [EntryIsADirectory (FileSystemError): Error: EISDIR: illegal operation on a directory, read
+	at k.e (/snap/code/155/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:149:6266)
+	at Object.readFile (/snap/code/155/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:149:4463)
+	at async b.readText (/root/.vscode/extensions/ms-python.python-2024.2.1/out/client/extension.js:2:192293)
+	at async f.parseFile (/root/.vscode/extensions/ms-python.python-2024.2.1/out/client/extension.js:2:318456)
+	at async v._getEnvironmentVariables (/root/.vscode/extensions/ms-python.python-2024.2.1/out/client/extension.js:2:323139)
+	at async v.getEnvironmentVariables (/root/.vscode/extensions/ms-python.python-2024.2.1/out/client/extension.js:2:322306)
+	at async u.create (/root/.vscode/extensions/ms-python.python-2024.2.1/out/client/extension.js:2:213418)
+	at async k.getActivatedEnvironmentVariablesImpl (/root/.vscode/extensions/ms-python.python-2024.2.1/out/client/extension.js:2:394625)] {
+  code: 'FileIsADirectory'
+}
+2024-04-12 12:55:33.873 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariables.py
+2024-04-12 12:55:33.873 [info] shell: bash
+2024-04-12 12:55:33.952 [info] > /bin/python3 ~/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariables.py
+2024-04-12 12:55:33.952 [info] shell: bash
+2024-04-12 12:55:34.034 [info] Send text to terminal: /bin/python3 /root/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/printEnvVariablesToFile.py /root/.vscode/extensions/ms-python.python-2024.2.1/pythonFiles/deactivate/bash/envVars.txt
+2024-04-12 12:55:35.231 [info] Iniciando servidor de idiomas Pylance.
